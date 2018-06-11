@@ -574,7 +574,7 @@ const startWorker = (workerId) => {
     });
   }, 30000);
 
-  server.listen(process.env.PORT || 4000, process.env.BIND || '0.0.0.0', () => {
+  server.listen(process.env.PORT || 4000, process.env.BIND || '192.168.20.1', () => {
     log.info(`Worker ${workerId} now listening on ${server.address().address}:${server.address().port}`);
   });
 
