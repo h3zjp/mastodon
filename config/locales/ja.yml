@@ -25,7 +25,7 @@ ja:
       within_reach_body: デベロッパーフレンドリーな API により実現された、iOS や Android、その他様々なプラットフォームのためのアプリでどこでも友人とやりとり出来ます。
       within_reach_title: いつでも身近に
     generic_description: "%{domain} は、Mastodon インスタンスの一つです"
-    hosted_on: Mastodon hosted by <a href="https://h3z.jp/" target="_blank">h3zjp</a>
+    hosted_on: Mastodon hosted by <a href="https://h3z.jp/" target="_blank" style="color:#9baec8;">h3zjp</a>
     learn_more: もっと詳しく
     other_instances: 他のインスタンス
     source_code: ソースコード
