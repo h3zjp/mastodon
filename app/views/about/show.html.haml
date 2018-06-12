@@ -136,11 +136,11 @@
             = render 'features'
 
             .landing-page__features__action
-              = link_to t('about.learn_more'), 'https://joinmastodon.org/', class: 'button button-alternative'
+              = link_to t('about.learn_more'), 'https://joinmastodon.org/', target: '_blank', class: 'button button-alternative'
 
           .landing-page__footer
             %p
-              = link_to t('about.source_code'), @instance_presenter.source_url
+              = link_to t('about.source_code'), 'https://github.com/h3zjp/mastodon', target: '_blank'
               = " (#{@instance_presenter.version_number})"
 
 #modal-container
