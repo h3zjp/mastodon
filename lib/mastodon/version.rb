@@ -4,6 +4,10 @@ module Mastodon
   module Version
     module_function
 
+    def h3zjp
+      'h3zjp/'
+    end
+    
     def major
       2
     end
@@ -29,11 +33,11 @@ module Mastodon
     end
 
     def to_s
-      [to_a.join('.'), flags].join
+      [h3zjp, to_a.join('.'), flags].join
     end
 
     def source_base_url
-      'https://github.com/tootsuite/mastodon'
+      'https://github.com/h3zjp/mastodon'
     end
 
     # specify git tag or commit hash here
