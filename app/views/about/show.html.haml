@@ -140,7 +140,7 @@
 
           .landing-page__footer
             %p
-              = link_to t('about.source_code'), 'https://github.com/h3zjp/mastodon', target: '_blank'
+              = link_to t('about.source_code'), @instance_presenter.source_url, target: '_blank'
               = " (#{@instance_presenter.version_number})"
 
 #modal-container
