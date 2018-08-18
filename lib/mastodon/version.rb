@@ -37,11 +37,11 @@ module Mastodon
     end
 
     def repository
-      'tootsuite/mastodon'
+      'h3zjp/mastodon'
     end
 
     def source_base_url
-      'https://github.com/h3zjp/mastodon'
+      'https://github.com/#{repository}'
     end
 
     # specify git tag or commit hash here
