@@ -41,11 +41,7 @@ module Mastodon
     end
 
     def source_base_url
-<<<<<<< HEAD
       'https://github.com/h3zjp/mastodon'
-=======
-      "https://github.com/#{repository}"
->>>>>>> upstream/master
     end
 
     # specify git tag or commit hash here
