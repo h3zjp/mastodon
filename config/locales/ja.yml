@@ -5,7 +5,6 @@ ja:
     about_mastodon_html: Mastodon は、オープンなウェブプロトコルを採用した、自由でオープンソースなソーシャルネットワークです。電子メールのような分散型の仕組みを採っています。
     about_this: 詳細情報
     administered_by: '管理者:'
-<<<<<<< HEAD
     closed_registrations: 現在このインスタンスでの新規登録は受け付けていません。しかし、他のインスタンスにアカウントを作成しても全く同じネットワークに参加することが出来ます。
     contact: 連絡先
     contact_missing: 未設定
@@ -13,14 +12,6 @@ ja:
     description_headline: "%{domain} とは?"
     domain_count_after: 個のインスタンス
     domain_count_before: 接続中
-=======
-    api: API
-    closed_registrations: 現在このインスタンスでの新規登録は受け付けていません。しかし、他のインスタンスにアカウントを作成しても全く同じネットワークに参加することが出来ます。
-    contact: 連絡先
-    contact_missing: 未設定
-    contact_unavailable: N/A
-    documentation: ドキュメント
->>>>>>> upstream/master
     extended_description_html: |
       <h3>ルールを書くのに適した場所</h3>
       <p>詳細説明が設定されていません。</p>
