@@ -17,7 +17,7 @@ module Mastodon
     end
 
     def patch
-      3
+      5
     end
 
     def pre
@@ -25,7 +25,7 @@ module Mastodon
     end
 
     def flags
-      ''
+      nil
     end
 
     def to_a
