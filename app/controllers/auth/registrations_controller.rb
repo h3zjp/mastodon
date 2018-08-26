@@ -17,7 +17,8 @@ class Auth::RegistrationsController < Devise::RegistrationsController
   def create
     raise 'Only human can register our service.' unless is_human?
     super
-  end  protected
+  end
+  protected
 
   def update_resource(resource, params)
     params[:password] = nil if Devise.pam_authentication && resource.encrypted_password.blank?
@@ -115,7 +116,8 @@ class Auth::RegistrationsController < Devise::RegistrationsController
       def is_human?; true end
     end
 
-  end  def set_sessions
+  end
+  def set_sessions
     @sessions = current_user.session_activations
   end
 end
