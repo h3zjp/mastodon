@@ -154,19 +154,19 @@ class ActionBar extends React.PureComponent {
 
         <div className='account__action-bar'>
           <div className='account__action-bar-links'>
-            <NavLink isActive={this.isStatusesPageActive} activeClassName='active' className='account__action-bar__tab' to={`/accounts/${account.get('id')}`} title={intl.formatNumber(account.get('statuses_count'))}>
+            <NavLink className='account__action-bar__tab' to={`/accounts/${account.get('id')}`}>
               <FormattedMessage id='account.posts' defaultMessage='Toots' />
-              <strong>{shortNumberFormat(account.get('statuses_count'))}</strong>
+              <strong>{intl.formatNumber(account.get('statuses_count'))}</strong>
             </NavLink>
 
-            <NavLink exact activeClassName='active' className='account__action-bar__tab' to={`/accounts/${account.get('id')}/following`} title={intl.formatNumber(account.get('following_count'))}>
+            <NavLink className='account__action-bar__tab' to={`/accounts/${account.get('id')}/following`}>
               <FormattedMessage id='account.follows' defaultMessage='Follows' />
-              <strong>{shortNumberFormat(account.get('following_count'))}</strong>
+              <strong>{intl.formatNumber(account.get('following_count'))}</strong>
             </NavLink>
 
-            <NavLink exact activeClassName='active' className='account__action-bar__tab' to={`/accounts/${account.get('id')}/followers`} title={intl.formatNumber(account.get('followers_count'))}>
+            <NavLink className='account__action-bar__tab' to={`/accounts/${account.get('id')}/followers`}>
               <FormattedMessage id='account.followers' defaultMessage='Followers' />
-              <strong>{shortNumberFormat(account.get('followers_count'))}</strong>
+              <strong>{intl.formatNumber(account.get('followers_count'))}</strong>
             </NavLink>
           </div>
 
