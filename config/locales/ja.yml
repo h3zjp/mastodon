@@ -895,11 +895,7 @@ ja:
     recovery_codes_regenerated: リカバリーコードが再生成されました
     recovery_instructions_html: 携帯電話を紛失した場合、以下の内どれかのリカバリーコードを使用してアカウントへアクセスすることが出来ます。<strong>リカバリーコードは大切に保全して下さい。</strong>たとえば印刷してほかの重要な書類と一緒に保管することが出来ます。
     setup: 初期設定
-<<<<<<< HEAD
-    wrong_code: コードが間違っています。サーバー上の時間とデバイス上の時間が一致していることを確認して下さい。
-=======
     wrong_code: コードが間違っています。サーバー上の時間とデバイス上の時間が一致していますか？
->>>>>>> upstream/master
   user_mailer:
     backup_ready:
       explanation: Mastodonアカウントのアーカイブを受け付けました。今すぐダウンロード出来ます!
