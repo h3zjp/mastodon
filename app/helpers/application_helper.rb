@@ -7,8 +7,8 @@ module ApplicationHelper
     follow
   ).freeze
 
-  def active_nav_class(path)
-    current_page?(path) ? 'active' : ''
+  def active_nav_class(*paths)
+    paths.any? { |path| current_page?(path) } ? 'active' : ''
   end
 
   def active_link_to(label, path, **options)
@@ -25,11 +25,6 @@ module ApplicationHelper
 
   def open_deletion?
     Setting.open_deletion
-  end
-
-  def add_rtl_body_class(other_classes)
-    other_classes = "#{other_classes} rtl" if locale_direction == 'rtl'
-    other_classes
   end
 
   def locale_direction
@@ -76,5 +71,14 @@ module ApplicationHelper
 
   def react_component(name, props = {})
     content_tag(:div, nil, data: { component: name.to_s.camelcase, props: Oj.dump(props) })
+  end
+
+  def body_classes
+    output = (@body_classes || '').split(' ')
+    output << "theme-#{current_theme.parameterize}"
+    output << 'system-font' if current_account&.user&.setting_system_font_ui
+    output << (current_account&.user&.setting_reduce_motion ? 'reduce-motion' : 'no-reduce-motion')
+    output << 'rtl' if locale_direction == 'rtl'
+    output.reject(&:blank?).join(' ')
   end
 end

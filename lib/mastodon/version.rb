@@ -25,7 +25,11 @@ module Mastodon
     end
 
     def flags
+<<<<<<< HEAD
       nil
+=======
+      ''
+>>>>>>> upstream/master
     end
 
     def to_a

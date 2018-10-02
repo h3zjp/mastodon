@@ -40,6 +40,7 @@ class FeedManager
   end
 
   def push_to_list(list, status)
+    return false if status.reply? && status.in_reply_to_account_id != status.account_id
     return false unless add_to_feed(:list, list.id, status)
     trim(:list, list.id)
     PushUpdateWorker.perform_async(list.account_id, status.id, "timeline:list:#{list.id}") if push_update_required?("timeline:list:#{list.id}")
@@ -288,7 +289,7 @@ class FeedManager
       # remains in the set. We could pick a random element, but this
       # set should generally be small, and it seems ideal to show the
       # oldest potential such reblog.
-      other_reblog = redis.smembers(reblog_set_key).map(&:to_i).sort.first
+      other_reblog = redis.smembers(reblog_set_key).map(&:to_i).min
 
       redis.zadd(timeline_key, other_reblog, other_reblog) if other_reblog
 

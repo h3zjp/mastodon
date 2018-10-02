@@ -69,7 +69,6 @@ nl:
         setting_default_privacy: Standaardzichtbaarheid van jouw toots
         setting_default_sensitive: Media altijd als gevoelig markeren
         setting_delete_modal: Vraag voor het verwijderen van een toot een bevestiging
-        setting_display_sensitive_media: Als gevoelig gemarkeerde media altijd tonen
         setting_hide_network: Jouw volgers en wie je volgt verbergen
         setting_noindex: Jouw toots niet door zoekmachines laten indexeren
         setting_reduce_motion: Langzamere animaties
@@ -92,6 +91,7 @@ nl:
         follow_request: Een e-mail versturen wanneer iemand jou wil volgen
         mention: Een e-mail versturen wanneer iemand jou vermeld
         reblog: Een e-mail versturen wanneer iemand jouw toot heeft geboost
+        report: Verstuur een e-mail wanneer een nieuw rapportage is ingediend
     'no': Nee
     required:
       mark: "*"
