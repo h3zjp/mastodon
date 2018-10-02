@@ -13,23 +13,19 @@ module Mastodon
     end
 
     def minor
-      4
-    end
-
-    def patch
       5
     end
 
+    def patch
+      0
+    end
+
     def pre
-      nil
+      1003
     end
 
     def flags
-<<<<<<< HEAD
-      nil
-=======
       ''
->>>>>>> upstream/master
     end
 
     def to_a
