@@ -126,36 +126,6 @@ class GettingStarted extends ImmutablePureComponent {
           </h1>
         </div>}
 
-<<<<<<< HEAD
-        <div className='getting-started__wrapper' style={{ height }}>
-          {!multiColumn && <NavigationBar account={myAccount} />}
-          {navItems}
-        </div>
-
-        {!multiColumn && <div className='flex-spacer' />}
-
-        <div className='getting-started getting-started__footer'>
-          <ul>
-            <li><a href='https://bridge.joinmastodon.org/' target='_blank'><FormattedMessage id='getting_started.find_friends' defaultMessage='Find friends from Twitter' /></a> · </li>
-            {invitesEnabled && <li><a href='/invites' target='_blank'><FormattedMessage id='getting_started.invite' defaultMessage='Invite people' /></a> · </li>}
-            {multiColumn && <li><Link to='/keyboard-shortcuts'><FormattedMessage id='navigation_bar.keyboard_shortcuts' defaultMessage='Hotkeys' /></Link> · </li>}
-            <li><a href='/auth/edit'><FormattedMessage id='getting_started.security' defaultMessage='Security' /></a> · </li>
-            <li><a href='/about/more' target='_blank'><FormattedMessage id='navigation_bar.info' defaultMessage='About this instance' /></a> · </li>
-            <li><a href='https://joinmastodon.org/apps' target='_blank'><FormattedMessage id='navigation_bar.apps' defaultMessage='Mobile apps' /></a> · </li>
-            <li><a href='/terms' target='_blank'><FormattedMessage id='getting_started.terms' defaultMessage='Terms of service' /></a> · </li>
-            <li><a href='/settings/applications' target='_blank'><FormattedMessage id='getting_started.developers' defaultMessage='Developers' /></a> · </li>
-            <li><a href='https://github.com/tootsuite/documentation#documentation' target='_blank'><FormattedMessage id='getting_started.documentation' defaultMessage='Documentation' /></a> · </li>
-            <li><a href='/auth/sign_out' data-method='delete'><FormattedMessage id='navigation_bar.logout' defaultMessage='Logout' /></a></li>
-          </ul>
-
-          <p>
-            <FormattedMessage
-              id='getting_started.open_source_notice'
-              defaultMessage='Mastodon is open source software. You can contribute or report issues on GitHub at {github}.'
-              values={{ github: <a href='https://github.com/h3zjp/mastodon' rel='noopener' target='_blank'>h3zjp/mastodon</a> }}
-            />
-          </p>
-=======
         <div className='getting-started'>
           <div className='getting-started__wrapper' style={{ height }}>
             {!multiColumn && <NavigationBar account={myAccount} />}
@@ -182,11 +152,10 @@ class GettingStarted extends ImmutablePureComponent {
               <FormattedMessage
                 id='getting_started.open_source_notice'
                 defaultMessage='Mastodon is open source software. You can contribute or report issues on GitHub at {github}.'
-                values={{ github: <span><a href='https://github.com/tootsuite/mastodon' rel='noopener' target='_blank'>tootsuite/mastodon</a> (v{version})</span> }}
+                values={{ github: <span><a href='https://github.com/h3zjp/mastodon' rel='noopener' target='_blank'>h3zjp/mastodon</a> (Ver. {version})</span> }}
               />
             </p>
           </div>
->>>>>>> upstream/master
         </div>
       </Column>
     );
