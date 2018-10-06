@@ -529,7 +529,11 @@ ja:
     '500':
       content: もうしわけありませんが、なにかが間違っています。
       title: このページは正しくありません
+<<<<<<< HEAD
     noscript_html: Mastodonのウェブアプリケーションを利用する場合はJavaScriptを有効にして下さい。またはあなたのプラットフォーム向けの<a href="https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/Apps.md" target="_blank">Mastodonネイティブアプリ</a>を探すことが出来ます。
+=======
+    noscript_html: Mastodonのウェブアプリケーションを利用する場合はJavaScriptを有効にしてください。またはあなたのプラットフォーム向けの<a href="%{apps_path}">Mastodonネイティブアプリ</a>を探すことができます。
+>>>>>>> upstream/master
   exports:
     archive_takeout:
       date: 日時
