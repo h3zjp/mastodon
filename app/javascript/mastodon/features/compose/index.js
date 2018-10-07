@@ -12,7 +12,7 @@ import Motion from '../ui/util/optional_motion';
 import spring from 'react-motion/lib/spring';
 import SearchResultsContainer from './containers/search_results_container';
 import { changeComposing } from '../../actions/compose';
-import elephantUIPlane from '../../../images/elephant_ui_plane.svg';
+import elephantUIPlaneCompose from '../../../images/elephant_ui_plane_compose.svg';
 
 const messages = defineMessages({
   start: { id: 'getting_started.heading', defaultMessage: 'Getting started' },
@@ -107,7 +107,7 @@ class Compose extends React.PureComponent {
             <ComposeFormContainer />
             {multiColumn && (
               <div className='drawer__inner__mastodon'>
-                <img alt='' draggable='false' src={elephantUIPlane} />
+                <img alt='' draggable='false' src={elephantUIPlaneCompose} />
               </div>
             )}
           </div>}
