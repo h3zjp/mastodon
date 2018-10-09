@@ -17,11 +17,11 @@ module Mastodon
     end
 
     def patch
-      0
+      1
     end
 
     def pre
-      1006
+      1009
     end
 
     def flags
