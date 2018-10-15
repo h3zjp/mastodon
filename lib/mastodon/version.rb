@@ -17,15 +17,11 @@ module Mastodon
     end
 
     def patch
-<<<<<<< HEAD
-      1
-=======
       2
->>>>>>> upstream/master
     end
 
     def pre
-      1009
+      1015
     end
 
     def flags
