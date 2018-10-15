@@ -17,7 +17,11 @@ module Mastodon
     end
 
     def patch
+<<<<<<< HEAD
       1
+=======
+      2
+>>>>>>> upstream/master
     end
 
     def pre
