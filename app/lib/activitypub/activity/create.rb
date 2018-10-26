@@ -28,6 +28,7 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
 
     process_status_params
     process_tags
+    process_audience
 
     ApplicationRecord.transaction do
       @status = Status.create!(@params)
@@ -64,6 +65,38 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
         media_attachment_ids: process_attachments.take(4).map(&:id),
       }
     end
+  end
+
+  def process_audience
+    (as_array(@object['to']) + as_array(@object['cc'])).uniq.each do |audience|
+      next if audience == ActivityPub::TagManager::COLLECTIONS[:public]
+
+      # Unlike with tags, there is no point in resolving accounts we don't already
+      # know here, because silent mentions would only be used for local access
+      # control anyway
+      account = account_from_uri(audience)
+
+      next if account.nil? || @mentions.any? { |mention| mention.account_id == account.id }
+
+      @mentions << Mention.new(account: account, silent: true)
+
+      # If there is at least one silent mention, then the status can be considered
+      # as a limited-audience status, and not strictly a direct message, but only
+      # if we considered a direct message in the first place
+      next unless @params[:visibility] == :direct
+
+      @params[:visibility] = :limited
+    end
+
+    # If the payload was delivered to a specific inbox, the inbox owner must have
+    # access to it, unless they already have access to it anyway
+    return if @options[:delivered_to_account_id].nil? || @mentions.any? { mention.account_id == @options[:delivered_to_account_id] }
+
+    @mentions << Mention.new(account_id: @options[:delivered_to_account_id], silent: true)
+
+    return unless @param[:visibility] == :direct
+
+    @params[:visibility] = :limited
   end
 
   def attach_tags(status)
@@ -113,7 +146,7 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
 
     return if account.nil?
 
-    @mentions << Mention.new(account: account)
+    @mentions << Mention.new(account: account, silent: false)
   end
 
   def process_emoji(tag)
