@@ -197,10 +197,6 @@ class Status < ApplicationRecord
     @emojis ||= CustomEmoji.from_text([spoiler_text, text].join(' '), account.domain)
   end
 
-  def avatar_emojis
-    AvatarEmoji.from_text([spoiler_text, text].join(' '), account.domain)
-  end
-
   def mark_for_mass_destruction!
     @marked_for_mass_destruction = true
   end
