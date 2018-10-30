@@ -24,6 +24,10 @@ class AvatarEmoji
     @image ||= Image.new(account.avatar)
   end
 
+  def visible_in_picker
+    false
+  end
+
   def attributes
     {}
   end
