@@ -617,7 +617,6 @@ const startWorker = (workerId) => {
     });
   }, 30000);
 
-<<<<<<< HEAD
   if (process.env.SOCKET || process.env.PORT && isNaN(+process.env.PORT)) {
     server.listen(process.env.SOCKET || process.env.PORT, () => {
       fs.chmodSync(server.address(), 0o666);
@@ -628,11 +627,6 @@ const startWorker = (workerId) => {
       log.info(`Worker ${workerId} now listening on ${server.address().address}:${server.address().port}`);
     });
   }
-=======
-  attachServerWithConfig(server, address => {
-    log.info(`Worker ${workerId} now listening on ${address}`);
-  });
->>>>>>> upstream/master
 
   const onExit = () => {
     log.info(`Worker ${workerId} exiting, bye bye`);
