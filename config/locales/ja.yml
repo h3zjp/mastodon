@@ -349,12 +349,7 @@ ja:
       reported_account: 報告対象アカウント
       reported_by: 報告者
       resolved: 解決済み
-<<<<<<< HEAD
       resolved_msg: レポートを解決済みにしました!
-      silence_account: アカウントをサイレンス
-=======
-      resolved_msg: レポートを解決済みにしました！
->>>>>>> upstream/master
       status: ステータス
       title: レポート
       unassign: 担当を外す
