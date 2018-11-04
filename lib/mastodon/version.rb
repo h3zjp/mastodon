@@ -33,7 +33,7 @@ module Mastodon
     end
 
     def repository
-      'Odakyudon/mastodon'
+      'accelforce/odakyudon'
     end
 
     def source_base_url
