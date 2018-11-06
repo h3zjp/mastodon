@@ -25,7 +25,7 @@ Rails.application.config.content_security_policy do |p|
     p.script_src  :self, :unsafe_inline, :unsafe_eval, assets_host
   else
     p.connect_src :self, :blob, assets_host, Rails.configuration.x.streaming_api_base_url
-    p.script_src  :self, assets_host
+    p.script_src  :self, :unsafe_inline, assets_host # PgHeroのために一時的にunsafe_inlineを追加しておく。後々本家で対処されそうなのでそれまでの暫定対応
   end
 end
 
