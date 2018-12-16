@@ -623,7 +623,7 @@ const startWorker = (workerId) => {
       log.info(`Worker ${workerId} now listening on ${server.address()}`);
     });
   } else {
-    server.listen(+process.env.PORT || 4000, process.env.BIND || '192.168.10.2', () => {
+    server.listen(+process.env.PORT || 4000, process.env.BIND || '192.168.10.3', () => {
       log.info(`Worker ${workerId} now listening on ${server.address().address}:${server.address().port}`);
     });
   }
@@ -655,7 +655,7 @@ const attachServerWithConfig = (server, onSuccess) => {
       }
     });
   } else {
-    server.listen(+process.env.PORT || 4000, process.env.BIND || '0.0.0.0', () => {
+    server.listen(+process.env.PORT || 4000, process.env.BIND || '192.168.10.3', () => {
       if (onSuccess) {
         onSuccess(`${server.address().address}:${server.address().port}`);
       }
