@@ -896,6 +896,7 @@ en:
     default: Mastodon
     mastodon-light: Mastodon (light)
     gplus-theme: G+ Theme for Mastodon
+    gplus-theme-schwarz: G+ Theme Schwarz
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
