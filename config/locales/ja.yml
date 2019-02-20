@@ -7,11 +7,7 @@ ja:
     administered_by: '管理者:'
     api: API
     apps: アプリ
-<<<<<<< HEAD
-    closed_registrations: 現在このインスタンスでの新規登録は受け付けていません。しかし、他のインスタンスにアカウントを作成しても全く同じネットワークに参加することが出来ます。
-=======
-    closed_registrations: 現在このサーバーでの新規登録は受け付けていません。しかし、他のサーバーにアカウントを作成しても全く同じネットワークに参加することができます。
->>>>>>> upstream/master
+    closed_registrations: 現在このサーバーでの新規登録は受け付けていません。しかし、他のサーバーにアカウントを作成しても全く同じネットワークに参加することが出来ます。
     contact: 連絡先
     contact_missing: 未設定
     contact_unavailable: N/A
@@ -24,23 +20,14 @@ ja:
     features:
       humane_approach_body: 他の SNS の失敗から学び、Mastodon はソーシャルメディアが誤った使い方をされることの無いように倫理的な設計を目指しています。
       humane_approach_title: より思いやりのある設計
-<<<<<<< HEAD
-      not_a_product_body: Mastodon は営利的な SNS ではありません。広告や、データの収集･解析は無く、またユーザーの囲い込みもありません。ここには中央権力はありません。
-=======
       not_a_product_body: Mastodon は営利的な SNS ではありません。広告や、データの収集・解析によるターゲティングは無く、またユーザーの囲い込みもありません。ここには中央権力はありません。
->>>>>>> upstream/master
       not_a_product_title: あなたは人間であり、商品ではありません
-      real_conversation_body: 好きなように書ける2,000文字(他インスタンスでは500文字)までの投稿や、文章やメディアの内容に警告をつけられる機能で、思い通りに自分自身を表現することが出来ます。
+      real_conversation_body: 好きなように書ける10,000文字(他インスタンスでは500文字)までの投稿や、文章やメディアの内容に警告をつけられる機能で、思い通りに自分自身を表現することが出来ます。
       real_conversation_title: 本当のコミュニケーションのために
       within_reach_body: デベロッパーフレンドリーな API により実現された、iOS や Android、その他様々なプラットフォームのためのアプリでどこでも友人とやりとり出来ます。
       within_reach_title: いつでも身近に
-<<<<<<< HEAD
-    generic_description: "%{domain} は、Mastodon インスタンスの一つです"
-    hosted_on: Mastodon hosted by <a href="https://h3z.jp/" target="_blank" style="color:#9baec8;">h3zjp</a>
-=======
     generic_description: "%{domain} は、Mastodon サーバーの一つです"
-    hosted_on: Mastodon hosted on %{domain}
->>>>>>> upstream/master
+    hosted_on: Mastodon hosted by <a href="https://h3z.jp/" target="_blank" style="color:#9baec8;">h3zjp</a>
     learn_more: もっと詳しく
     other_instances: 他のサーバー
     privacy_policy: プライバシーポリシー
@@ -435,24 +422,14 @@ ja:
         desc_html: ユーザーページにスタッフのバッジを表示します
         title: スタッフバッジを表示する
       site_description:
-<<<<<<< HEAD
-        desc_html: フロントページへの表示に使用される紹介文です。このMastodonインスタンスを特徴付けることやその他重要なことを記述して下さい。HTMLタグ、特に<code>&lt;a&gt;</code> と <code>&lt;em&gt;</code>が使えます。
-        title: インスタンスの説明
-=======
-        desc_html: フロントページへの表示に使用される紹介文です。このMastodonサーバーを特徴付けることやその他重要なことを記述してください。HTMLタグ、特に<code>&lt;a&gt;</code> と <code>&lt;em&gt;</code>が使えます。
+        desc_html: フロントページへの表示に使用される紹介文です。このMastodonサーバーを特徴付けることやその他重要なことを記述して下さい。HTMLタグ、特に<code>&lt;a&gt;</code> と <code>&lt;em&gt;</code>が使えます。
         title: サーバーの説明
->>>>>>> upstream/master
       site_description_extended:
-        desc_html: あなたのサーバーにおける行動規範やルール、ガイドライン、そのほかの記述をする際に最適な場所です。HTMLタグが使えます
+        desc_html: あなたのサーバーにおける行動規範やルール、ガイドライン、そのほかの記述をする際に最適な場所です。HTMLタグが使えます。
         title: カスタム詳細説明
       site_short_description:
-<<<<<<< HEAD
-        desc_html: サイドバーと meta タグに表示されます。Mastodon とは何か、そしてこのサーバーの特別な何かを1段落で記述して下さい。空欄の場合、インスタンスの説明が使用されます。
-        title: 短いインスタンスの説明
-=======
-        desc_html: サイドバーと meta タグに表示されます。Mastodon とは何か、そしてこのサーバーの特別な何かを1段落で記述してください。空欄の場合、サーバーの説明が使用されます。
+        desc_html: サイドバーと meta タグに表示されます。Mastodon とは何か、そしてこのサーバーの特別な何かを1段落で記述して下さい。空欄の場合、サーバーの説明が使用されます。
         title: 短いサーバーの説明
->>>>>>> upstream/master
       site_terms:
         desc_html: あなたは独自のプライバシーポリシーや利用規約、そのほかの法的根拠を書くことが出来ます。HTMLタグが使えます
         title: カスタム利用規約
@@ -574,11 +551,7 @@ ja:
     description_html: あなたのアカウントに含まれるコンテンツは全て削除され、アカウントは無効化されます。これは恒久的なもので、<strong>取り消すことは出来ません</strong>。なりすましを防ぐために、同じユーザー名で再度登録することは出来なくなります。
     proceed: アカウントを削除する
     success_msg: アカウントは正常に削除されました
-<<<<<<< HEAD
-    warning_html: 削除が保証されるのはこのインスタンス上のコンテンツのみです。他のインスタンス等、外部に広く共有されたコンテンツについては痕跡が残ることがあります。また、現在接続出来ないサーバーや、あなたの更新を受け取らなくなったサーバーに対しては、削除は反映されません。
-=======
     warning_html: 削除が保証されるのはこのサーバー上のコンテンツのみです。他のサーバー等、外部に広く共有されたコンテンツについては痕跡が残ることがあります。また、現在接続できないサーバーや、あなたの更新を受け取らなくなったサーバーに対しては、削除は反映されません。
->>>>>>> upstream/master
     warning_title: 共有されたコンテンツについて
   directories:
     directory: ディレクトリ
@@ -661,17 +634,13 @@ ja:
       one: エラーが発生しました! 以下のエラーを確認して下さい。
       other: エラーが発生しました! 以下の%{count}個のエラーを確認して下さい。
   imports:
-<<<<<<< HEAD
-    preface: 他のインスタンスでエクスポートされたファイルから、フォロー/ブロックした情報をこのインスタンス上のアカウントにインポート出来ます。
-    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認して下さい。
-=======
     modes:
       merge: 統合
-      merge_long: 現在のレコードを保持したまま新しいものを追加します
+      merge_long: 現在のレコードを保持したまま新しいものを追加します。
       overwrite: 上書き
-      overwrite_long: 現在のレコードを新しいもので置き換えます
-    preface: 他のサーバーでエクスポートされたファイルから、フォロー/ブロックした情報をこのサーバー上のアカウントにインポートできます。
-    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認してください
+      overwrite_long: 現在のレコードを新しいもので置き換えます。
+    preface: 他のサーバーでエクスポートされたファイルから、フォロー/ブロックした情報をこのサーバー上のアカウントにインポート出来ます。
+    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認して下さい。
 >>>>>>> upstream/master
     types:
       blocking: ブロックしたアカウントリスト
@@ -697,11 +666,7 @@ ja:
       one: '1'
       other: "%{count}"
     max_uses_prompt: 無制限
-<<<<<<< HEAD
-    prompt: リンクを生成・共有してこのインスタンスへの新規登録を受け付けることが出来ます
-=======
-    prompt: リンクを生成・共有してこのサーバーへの新規登録を受け付けることができます
->>>>>>> upstream/master
+    prompt: リンクを生成･共有してこのサーバーへの新規登録を受け付けることが出来ます。
     table:
       expires_at: 有効期限
       uses: 使用
@@ -1034,22 +999,14 @@ ja:
       review_preferences_action: 設定の変更
       review_preferences_step: 受け取りたいメールや投稿の公開範囲などの設定を必ず行って下さい。不快でないならアニメーション GIF の自動再生を有効にすることも出来ます。
       subject: Mastodon へようこそ
-<<<<<<< HEAD
-      tip_bridge_html: もし Twitter から来られたのであれば、<a href="%{bridge_url}" target="_blank">bridge app</a> を使用することで Mastodon での友達のアカウントを探すことも出来ます。ただし bridge app を使用したことのある相手に限ります!
-      tip_federated_timeline: 連合タイムラインは Mastodon ネットワークの流れを見られるものです。ただしあなたと同じインスタンスの人がフォローしている人だけが含まれるので、それが全てではありません。
-      tip_following: 標準では自動でインスタンスの管理者をフォローしています。もっと興味のある人たちを見つけるには、ローカルタイムラインと連合タイムラインを確認して下さい。
-      tip_local_timeline: ローカルタイムラインは %{instance} にいる人々の流れを見られるものです。彼らはあなたと同じインスタンスにいる隣人のようなものです!
-      tip_mobile_webapp: もしモバイル端末のブラウザで Mastodon をホーム画面に追加出来る場合、プッシュ通知を受け取ることが出来ます。それはまるでネイティブアプリのように動作します!
-=======
       tip_federated_timeline: 連合タイムラインは Mastodon ネットワークの流れを見られるものです。ただしあなたと同じサーバーの人がフォローしている人だけが含まれるので、それが全てではありません。
-      tip_following: 標準では自動でサーバーの管理者をフォローしています。もっと興味のある人たちを見つけるには、ローカルタイムラインと連合タイムラインを確認してください。
-      tip_local_timeline: ローカルタイムラインは %{instance} にいる人々の流れを見られるものです。彼らはあなたと同じサーバーにいる隣人のようなものです！
-      tip_mobile_webapp: もしモバイル端末のブラウザで Mastodon をホーム画面に追加できる場合、プッシュ通知を受け取ることができます。それはまるでネイティブアプリのように動作します！
->>>>>>> upstream/master
+      tip_following: 標準では自動でサーバーの管理者をフォローしています。もっと興味のある人たちを見つけるには、ローカルタイムラインと連合タイムラインを確認して下さい。
+      tip_local_timeline: ローカルタイムラインは %{instance} にいる人々の流れを見られるものです。彼らはあなたと同じサーバーにいる隣人のようなものです!
+      tip_mobile_webapp: もしモバイル端末のブラウザで Mastodon をホーム画面に追加出来る場合、プッシュ通知を受け取ることが出来ます。それはまるでネイティブアプリのように動作します!
       tips: 豆知識
       title: ようこそ、%{name} !
   users:
-    follow_limit_reached: あなたは現在 %{limit} 人以上フォローできません
+    follow_limit_reached: あなたは現在 %{limit} 人以上フォロー出来ません
     invalid_email: メールアドレスが無効です
     invalid_otp_token: 二段階認証コードが間違っています
     otp_lost_help_html: どちらも使用出来ない場合、%{email} に連絡を取ると解決出来るかもしれません
