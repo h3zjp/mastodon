@@ -26,7 +26,7 @@ class Report < ApplicationRecord
   scope :unresolved, -> { where(action_taken: false) }
   scope :resolved,   -> { where(action_taken: true) }
 
-  validates :comment, length: { maximum: 1000 }
+  validates :comment, length: { maximum: 2000 }
 
   def object_type
     :flag
