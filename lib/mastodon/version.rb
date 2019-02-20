@@ -3,11 +3,7 @@
 module Mastodon
   module Version
     module_function
-
-    def h3zjp
-      'h3zjp/'
-    end
-    
+   
     def major
       2
     end
@@ -21,11 +17,11 @@ module Mastodon
     end
 
     def pre
-      1102
+      nil
     end
 
     def flags
-      ''
+      '-h3zjp'
     end
 
     def to_a
@@ -33,7 +29,7 @@ module Mastodon
     end
 
     def to_s
-      [h3zjp, to_a.join('.'), flags].join
+      [to_a.join('.'), flags].join
     end
 
     def repository
