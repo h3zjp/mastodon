@@ -45,8 +45,8 @@ RSpec.describe StatusPinValidator, type: :validator do
       end
     end
 
-    context 'pin.account.status_pins.count > 4 && pin.account.local?' do
-      let(:count) { 5 }
+    context 'pin.account.status_pins.count > 20 && pin.account.local?' do
+      let(:count) { 21 }
       let(:local) { true }
 
       it 'calls errors.add' do
