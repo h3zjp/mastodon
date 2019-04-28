@@ -1,10 +1,10 @@
-threads_count = ENV.fetch('MAX_THREADS') { 5 }.to_i
+threads_count = ENV.fetch('MAX_THREADS') { 4 }.to_i
 threads threads_count, threads_count
 
 if ENV['SOCKET']
   bind 'unix://' + ENV['SOCKET']
 else
-  port ENV.fetch('PORT') { 3000 }
+  bind 'tcp://192.168.10.3:' + ENV.fetch('PORT') { 3000 }
 end
 
 environment ENV.fetch('RAILS_ENV') { 'development' }
