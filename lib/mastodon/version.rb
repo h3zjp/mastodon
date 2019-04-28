@@ -21,7 +21,7 @@ module Mastodon
     end
 
     def flags
-      ''
+      '-h3zjp'
     end
 
     def to_a
