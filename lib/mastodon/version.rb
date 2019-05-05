@@ -42,7 +42,7 @@ module Mastodon
 
     # specify git tag or commit hash here
     def source_tag
-      ENV.fetch('GITHUB_BRANCH') { nil }
+      ENV.fetch('SOURCE_TAG') { nil }
     end
 
     def source_url
