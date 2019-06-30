@@ -51,7 +51,9 @@ class AvatarEmoji
 
       emojis = shortcodes.reduce([]) do |emojis, shortcode|
         username, host = shortcode.split('@')
-        emojis << new(Account.where(username: username, domain: host || domain).first, "@#{shortcode}")
+        account = Account.where(username: username, domain: host || domain).first
+        return emojis if account.nil?
+        emojis << new(account, "@#{shortcode}")
       end
 
       emojis.compact
