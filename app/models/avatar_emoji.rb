@@ -3,7 +3,7 @@
 class AvatarEmoji
   include ActiveModel::Serialization
 
-  attr_reader :account
+  attr_reader :account, :shortcode
 
   Image = Struct.new(:source) do
     def url(type = :original)
@@ -12,12 +12,9 @@ class AvatarEmoji
     end
   end
 
-  def initialize(account)
+  def initialize(account, shortcode)
     @account = account
-  end
-
-  def shortcode
-    "@#{account.acct}"
+    @shortcode = shortcode
   end
 
   def image
@@ -52,12 +49,12 @@ class AvatarEmoji
 
       return [] if shortcodes.empty?
 
-      accounts = shortcodes.reduce(Account.where('1 = 0')) do |query, shortcode|
+      emojis = shortcodes.reduce([]) do |emojis, shortcode|
         username, host = shortcode.split('@')
-        query.or(Account.where(username: username, domain: host || domain))
+        emojis << new(Account.where(username: username, domain: host || domain).first, "@#{shortcode}")
       end
 
-      accounts.map {|account| new(account) }
+      emojis.compact
     end
   end
 
