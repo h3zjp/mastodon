@@ -28,6 +28,10 @@ class AvatarEmoji
     false
   end
 
+  def association(name)
+    FakeAssociation.new()
+  end
+
   def attributes
     {}
   end
@@ -54,6 +58,12 @@ class AvatarEmoji
       end
 
       accounts.map {|account| new(account) }
+    end
+  end
+
+  class FakeAssociation
+    def loaded?
+      false
     end
   end
 end
