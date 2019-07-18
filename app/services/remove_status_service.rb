@@ -5,14 +5,13 @@ class RemoveStatusService < BaseService
   include Payloadable
 
   def call(status, **options)
-    @payload      = Oj.dump(event: :delete, payload: status.id.to_s)
-    @status       = status
-    @account      = status.account
-    @tags         = status.tags.pluck(:name).to_a
-    @mentions     = status.active_mentions.includes(:account).to_a
-    @reblogs      = status.reblogs.includes(:account).to_a
-    @stream_entry = status.stream_entry
-    @options      = options
+    @payload  = Oj.dump(event: :delete, payload: status.id.to_s)
+    @status   = status
+    @account  = status.account
+    @tags     = status.tags.pluck(:name).to_a
+    @mentions = status.active_mentions.includes(:account).to_a
+    @reblogs  = status.reblogs.includes(:account).to_a
+    @options  = options
 
     RedisLock.acquire(lock_options) do |lock|
       if lock.acquired?
@@ -24,6 +23,7 @@ class RemoveStatusService < BaseService
         remove_from_hashtags
         remove_from_public
         remove_from_media if status.media_attachments.any?
+        remove_from_spam_check
 
         @status.destroy!
       else
@@ -141,6 +141,10 @@ class RemoveStatusService < BaseService
 
     redis.publish('timeline:public:media', @payload)
     redis.publish('timeline:public:local:media', @payload) if @status.local?
+  end
+
+  def remove_from_spam_check
+    redis.zremrangebyscore("spam_check:#{@status.account_id}", @status.id, @status.id)
   end
 
   def lock_options
