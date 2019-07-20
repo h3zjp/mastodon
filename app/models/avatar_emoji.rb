@@ -51,9 +51,9 @@ class AvatarEmoji
 
       emojis = shortcodes.reduce([]) do |emojis, shortcode|
         username, host = shortcode.split('@')
-        account = Account.where(username: username, domain: host || domain).first
-        return emojis if account.nil?
-        emojis << new(account, "@#{shortcode}")
+        account = Account.find_remote(username, host || domain)
+        emojis << new(account, "@#{shortcode}") if !account.nil?
+        emojis
       end
 
       emojis.compact
