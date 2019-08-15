@@ -33,7 +33,7 @@ class MediaAttachment < ApplicationRecord
   IMAGE_MIME_TYPES             = %w(image/jpeg image/png image/gif image/webp).freeze
   VIDEO_MIME_TYPES             = %w(video/webm video/mp4 video/quicktime video/ogg).freeze
   VIDEO_CONVERTIBLE_MIME_TYPES = %w(video/webm video/quicktime).freeze
-  AUDIO_MIME_TYPES             = %w(audio/wave audio/wav audio/x-wav audio/x-pn-wave audio/ogg audio/mpeg audio/mp3 audio/webm audio/flac audio/aac audio/m4a audio/3gpp).freeze
+  AUDIO_MIME_TYPES             = %w(audio/wave audio/wav audio/x-wav audio/x-pn-wave audio/ogg audio/mpeg audio/mp3 audio/webm audio/flac audio/aac audio/m4a audio/x-m4a audio/3gpp).freeze
 
   BLURHASH_OPTIONS = {
     x_comp: 4,
