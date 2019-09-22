@@ -10,7 +10,7 @@ ja:
         account:
           attributes:
             username:
-              invalid: アルファベット・数字・アンダーバーの組み合わせで入力してください
+              invalid: アルファベット･数字･アンダーバーの組み合わせで入力して下さい
         status:
           attributes:
             reblog:
