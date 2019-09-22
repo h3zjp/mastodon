@@ -52,7 +52,7 @@ class Account < ApplicationRecord
   USERNAME_RE = /[a-z0-9_]+([a-z0-9_\.-]+[a-z0-9_]+)?/i
   MENTION_RE  = /(?<=^|[^\/:[:word:]])@((#{USERNAME_RE})(?:@[a-z0-9\.\-]+[a-z0-9]+)?)/i
 
-  FIELDS_COUNT = 8
+  FIELDS_COUNT = 20
 
   include AccountAssociations
   include AccountAvatar
@@ -78,11 +78,11 @@ class Account < ApplicationRecord
   validates :username, format: { with: /\A#{USERNAME_RE}\z/i }, if: -> { !local? && will_save_change_to_username? }
 
   # Local user validations
-  validates :username, format: { with: /\A[a-z0-9_]+\z/i }, length: { maximum: 30 }, if: -> { local? && will_save_change_to_username? && actor_type != 'Application' }
+  validates :username, format: { with: /\A[a-z0-9_]+\z/i }, length: { maximum: 100 }, if: -> { local? && will_save_change_to_username? && actor_type != 'Application' }
   validates_with UniqueUsernameValidator, if: -> { local? && will_save_change_to_username? }
   validates_with UnreservedUsernameValidator, if: -> { local? && will_save_change_to_username? }
-  validates :display_name, length: { maximum: 64 }, if: -> { local? && will_save_change_to_display_name? }
-  validates :note, note_length: { maximum: 512 }, if: -> { local? && will_save_change_to_note? }
+  validates :display_name, length: { maximum: 100 }, if: -> { local? && will_save_change_to_display_name? }
+  validates :note, note_length: { maximum: 2000 }, if: -> { local? && will_save_change_to_note? }
   validates :fields, length: { maximum: FIELDS_COUNT }, if: -> { local? && will_save_change_to_fields? }
 
   scope :remote, -> { where.not(domain: nil) }
