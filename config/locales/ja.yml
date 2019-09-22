@@ -11,7 +11,7 @@ ja:
     apps: アプリ
     apps_platforms: iOSやAndroidなど、各種環境から利用できます
     browse_directory: ディレクトリから気になる人を探しましょう
-    browse_public_posts: Mastodonの公開ライブストリームをご覧ください
+    browse_public_posts: Mastodonの公開ライブストリームをご覧下さい
     contact: 連絡先
     contact_missing: 未設定
     contact_unavailable: N/A
@@ -23,8 +23,8 @@ ja:
     federation_hint_html: "%{instance} のアカウントひとつでどんなMastodon互換サーバーのユーザーでもフォローできるでしょう。"
     generic_description: "%{domain} は、Mastodon サーバーの一つです"
     get_apps: モバイルアプリを試す
-    hosted_on: Mastodon hosted on %{domain}
-    instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、個人のアカウントではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックする以外の目的でブロックしないでください。サーバー全体をブロックする場合、ドメインブロックを使用してください。
+    hosted_on: Mastodon hosted by <a href="https://h3z.jp/" target="_blank" style="color:#9baec8;">h3zjp</a>
+    instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、個人のアカウントではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックする以外の目的でブロックしないで下さい。サーバー全体をブロックする場合、ドメインブロックを使用して下さい。
 
 '
     learn_more: もっと詳しく
@@ -40,7 +40,7 @@ ja:
     user_count_after:
       other: 人
     user_count_before: ユーザー数
-    what_is_mastodon: Mastodon とは？
+    what_is_mastodon: Mastodon とは?
   accounts:
     choices_html: "%{name} によるおすすめ:"
     endorsements_hint: あなたがフォローしている中でおすすめしたい人をここで紹介できます。
@@ -56,7 +56,7 @@ ja:
     moved_html: "%{name} さんは引っ越しました %{new_profile_link}:"
     network_hidden: この情報は利用できません
     never_active: 活動なし
-    nothing_here: 何もありません！
+    nothing_here: 何もありません!
     people_followed_by: "%{name} さんがフォロー中のアカウント"
     people_who_follow: "%{name} さんをフォロー中のアカウント"
     pin_errors:
@@ -78,17 +78,17 @@ ja:
       title: "%{acct}さんに対してアクションを実行"
     account_moderation_notes:
       create: 書き込む
-      created_msg: モデレーションメモを書き込みました！
+      created_msg: モデレーションメモを書き込みました!
       delete: 削除
-      destroyed_msg: モデレーションメモを削除しました！
+      destroyed_msg: モデレーションメモを削除しました!
     accounts:
       approve: 承認
       approve_all: すべて承認
-      are_you_sure: 本当に実行しますか？
+      are_you_sure: 本当に実行しますか?
       avatar: アイコン
       by_domain: ドメイン
       change_email:
-        changed_msg: メールアドレスの変更に成功しました！
+        changed_msg: メールアドレスの変更に成功しました!
         current_email: 現在のメールアドレス
         label: メールアドレスを変更
         new_email: 新しいメールアドレス
@@ -225,9 +225,9 @@ ja:
       copied_msg: 絵文字のコピーをローカルに作成しました
       copy: コピー
       copy_failed_msg: 絵文字のコピーをローカルに作成できませんでした
-      created_msg: 絵文字の追加に成功しました！
+      created_msg: 絵文字の追加に成功しました!
       delete: 削除
-      destroyed_msg: 絵文字の削除に成功しました！
+      destroyed_msg: 絵文字の削除に成功しました!
       disable: 無効化
       disabled_msg: 絵文字を無効化しました
       emoji: 絵文字
@@ -243,7 +243,7 @@ ja:
       title: カスタム絵文字
       unlisted: 未収載
       update_failed_msg: 絵文字を更新できませんでした
-      updated_msg: 絵文字の更新に成功しました！
+      updated_msg: 絵文字の更新に成功しました!
       upload: アップロード
     dashboard:
       authorized_fetch_mode: セキュアモード
@@ -373,14 +373,14 @@ ja:
       status: ステータス
       title: リレー
     report_notes:
-      created_msg: 通報メモを書き込みました！
-      destroyed_msg: 通報メモを削除しました！
+      created_msg: 通報メモを書き込みました!
+      destroyed_msg: 通報メモを削除しました!
     reports:
       account:
         note: メモ
         report: 通報
       action_taken_by: 通報処理者
-      are_you_sure: 本当に実行しますか？
+      are_you_sure: 本当に実行しますか?
       assign_to_self: 担当になる
       assigned: 担当者
       comment:
@@ -393,13 +393,13 @@ ja:
         create_and_resolve: 書き込み、解決済みにする
         create_and_unresolve: 書き込み、未解決として開く
         delete: 削除
-        placeholder: どのような措置が取られたか、または関連する更新を記述してください…
+        placeholder: どのような措置が取られたか、または関連する更新を記述して下さい…
       reopen: 再び開く
       report: 通報#%{id}
       reported_account: 報告対象アカウント
       reported_by: 報告者
       resolved: 解決済み
-      resolved_msg: 通報を解決済みにしました！
+      resolved_msg: 通報を解決済みにしました!
       status: ステータス
       title: 通報
       unassign: 担当を外す
@@ -463,13 +463,13 @@ ja:
         desc_html: ユーザーページにスタッフのバッジを表示します
         title: スタッフバッジを表示する
       site_description:
-        desc_html: フロントページへの表示に使用される紹介文です。このMastodonサーバーを特徴付けることやその他重要なことを記述してください。HTMLタグ、特に<code>&lt;a&gt;</code> と <code>&lt;em&gt;</code>が使えます。
+        desc_html: フロントページへの表示に使用される紹介文です。このMastodonサーバーを特徴付けることやその他重要なことを記述して下さい。HTMLタグ、特に<code>&lt;a&gt;</code> と <code>&lt;em&gt;</code>が使えます。
         title: サーバーの説明
       site_description_extended:
         desc_html: あなたのサーバーにおける行動規範やルール、ガイドライン、そのほかの記述をする際に最適な場所です。HTMLタグが使えます
         title: カスタム詳細説明
       site_short_description:
-        desc_html: サイドバーと meta タグに表示されます。Mastodon とは何か、そしてこのサーバーの特別な何かを1段落で記述してください。空欄の場合、サーバーの説明が使用されます。
+        desc_html: サイドバーと meta タグに表示されます。Mastodon とは何か、そしてこのサーバーの特別な何かを1段落で記述して下さい。空欄の場合、サーバーの説明が使用されます。
         title: 短いサーバーの説明
       site_terms:
         desc_html: 独自のプライバシーポリシーや利用規約、その他の法的根拠を記述できます。HTMLタグが使えます
@@ -554,7 +554,7 @@ ja:
     invalid_url: URLが無効です
     regenerate_token: アクセストークンの再生成
     token_regenerated: アクセストークンが再生成されました
-    warning: このデータは気をつけて取り扱ってください。他の人と共有しないでください！
+    warning: このデータは気をつけて取り扱って下さい。他の人と共有しないで下さい!
     your_token: アクセストークン
   auth:
     apply_for_account: 登録を申請する
@@ -563,9 +563,9 @@ ja:
     checkbox_agreement_without_rules_html: <a href="%{terms_path}" target="_blank">利用規約</a> に同意します
     delete_account: アカウントの削除
     delete_account_html: アカウントを削除したい場合、<a href="%{path}">こちら</a> から手続きが行えます。削除する前に、確認画面があります。
-    didnt_get_confirmation: 確認メールを受信できませんか？
-    forgot_password: パスワードをお忘れですか？
-    invalid_reset_password_token: パスワードリセットトークンが正しくないか期限切れです。もう一度リクエストしてください。
+    didnt_get_confirmation: 確認メールを受信できませんか?
+    forgot_password: パスワードをお忘れですか?
+    invalid_reset_password_token: パスワードリセットトークンが正しくないか期限切れです。もう一度リクエストして下さい。
     login: ログイン
     logout: ログアウト
     migrate_account: 別のアカウントに引っ越す
@@ -589,13 +589,13 @@ ja:
       confirming: メールアドレスの確認が完了するのを待っています。
       functional: アカウントは完全に機能しています。
       pending: あなたの申請は現在サーバー管理者による審査待ちです。これにはしばらくかかります。申請が承認されるとメールが届きます。
-    trouble_logging_in: ログインできませんか？
+    trouble_logging_in: ログインできませんか?
   authorize_follow:
     already_following: あなたは既にこのアカウントをフォローしています
     error: 残念ながら、リモートアカウント情報の取得中にエラーが発生しました
     follow: フォロー
     follow_request: 'あなたは以下のアカウントにフォローリクエストを送信しました:'
-    following: '成功！ あなたは現在以下のアカウントをフォローしています:'
+    following: '成功! あなたは現在以下のアカウントをフォローしています:'
     post_follow:
       close: またはこのウィンドウを閉じます。
       return: ユーザーのプロフィールを見る
@@ -616,7 +616,7 @@ ja:
       x_months: "%{count}月"
       x_seconds: "%{count}秒"
   deletes:
-    confirm_password: 本人確認のため、現在のパスワードを入力してください
+    confirm_password: 本人確認のため、現在のパスワードを入力して下さい
     proceed: アカウントを削除する
     success_msg: アカウントは正常に削除されました
   directories:
@@ -649,14 +649,14 @@ ja:
     '406': このページは要求された形式では利用できません。
     '410': お探しのページはもう存在しません。
     '422':
-      content: セキュリティ認証に失敗しました。Cookieをブロックしていませんか？
+      content: セキュリティ認証に失敗しました。Cookieをブロックしていませんか?
       title: セキュリティ認証に失敗
     '429': リクエストの制限に達しました
     '500':
       content: もうしわけありませんが、なにかが間違っています。
       title: このページは正しくありません
     '503': 一時的なサーバー障害のため利用することができません。
-    noscript_html: Mastodonのウェブアプリケーションを利用する場合はJavaScriptを有効にしてください。またはあなたのプラットフォーム向けの<a href="%{apps_path}">Mastodonネイティブアプリ</a>を探すことができます。
+    noscript_html: Mastodonのウェブアプリケーションを利用する場合はJavaScriptを有効にして下さい。またはあなたのプラットフォーム向けの<a href="%{apps_path}">Mastodonネイティブアプリ</a>を探すことができます。
   existing_username_validator:
     not_found: そのようなユーザー名はローカルに見つかりませんでした
     not_found_multiple: "%{usernames} は見つかりませんでした"
@@ -679,7 +679,7 @@ ja:
     add_new: 追加
     errors:
       limit: 注目のハッシュタグの上限に達しました
-    hint_html: "<strong>注目のハッシュタグとは？</strong>プロフィールページに目立つ形で表示され、そのハッシュタグのついたあなたの公開投稿だけを抽出して閲覧できるようにします。クリエイティブな仕事や長期的なプロジェクトを追うのに優れた機能です。"
+    hint_html: "<strong>注目のハッシュタグとは?</strong>プロフィールページに目立つ形で表示され、そのハッシュタグのついたあなたの公開投稿だけを抽出して閲覧できるようにします。クリエイティブな仕事や長期的なプロジェクトを追うのに優れた機能です。"
   filters:
     contexts:
       home: ホームタイムライン
@@ -703,24 +703,24 @@ ja:
     trending_now: トレンドタグ
   generic:
     all: すべて
-    changes_saved_msg: 正常に変更されました！
+    changes_saved_msg: 正常に変更されました!
     copy: コピー
     order_by: 並び順
     save_changes: 変更を保存
     validation_errors:
-      other: エラーが発生しました！ 以下の%{count}個のエラーを確認してください
+      other: エラーが発生しました! 以下の%{count}個のエラーを確認して下さい
   html_validator:
     invalid_markup: '無効なHTMLマークアップが含まれています: %{error}'
   identity_proofs:
     active: アクティブ
     authorize: 許可する
-    authorize_connection_prompt: この暗号化接続を許可しますか？
+    authorize_connection_prompt: この暗号化接続を許可しますか?
     errors:
-      failed: 暗号化接続に失敗しました。%{provider}からもう一度やり直してください。
+      failed: 暗号化接続に失敗しました。%{provider}からもう一度やり直して下さい。
       keybase:
         invalid_token: Keybaseトークンは16進数で66文字のハッシュである必要があります
-        verification_failed: KeybaseはこのトークンをKeybaseユーザー%{kb_username}の署名として認識しませんでした。Keybaseから再試行してください。
-      wrong_user: "%{current}としてログインしている間%{proving}の証明を作成することはできません。%{proving}としてログインし、もう一度やり直してください。"
+        verification_failed: KeybaseはこのトークンをKeybaseユーザー%{kb_username}の署名として認識しませんでした。Keybaseから再試行して下さい。
+      wrong_user: "%{current}としてログインしている間%{proving}の証明を作成することはできません。%{proving}としてログインし、もう一度やり直して下さい。"
     explanation_html: ここではKeybaseのような他のサービスのアカウントと暗号化し関連づけることができます。これにより他の人が暗号化されたメッセージを送信したり、その内容を信用できるようになります。
     i_am_html: I am %{username} on %{service}.
     identity: Identity
@@ -736,7 +736,7 @@ ja:
       overwrite: 上書き
       overwrite_long: 現在のレコードを新しいもので置き換えます
     preface: 他のサーバーでエクスポートされたファイルから、フォロー/ブロックした情報をこのサーバー上のアカウントにインポートできます。
-    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認してください
+    success: ファイルは正常にアップロードされ、現在処理中です。しばらくしてから確認して下さい
     types:
       blocking: ブロックしたアカウントリスト
       domain_blocking: 非表示にしたドメインリスト
@@ -760,7 +760,7 @@ ja:
     max_uses:
       other: "%{count}"
     max_uses_prompt: 無制限
-    prompt: リンクを生成・共有してこのサーバーへの新規登録を受け付けることができます
+    prompt: リンクを生成･共有してこのサーバーへの新規登録を受け付けることができます
     table:
       expires_at: 有効期限
       uses: 使用
@@ -776,7 +776,7 @@ ja:
     acct: 引っ越し先の ユーザー名@ドメイン
     currently_redirecting: 'あなたのプロフィールは引っ越し先が設定されています:'
     proceed: 保存
-    updated_msg: アカウントの引っ越し設定を更新しました！
+    updated_msg: アカウントの引っ越し設定を更新しました!
   moderation:
     title: モデレーション
   notification_mailer:
@@ -785,7 +785,7 @@ ja:
       body: '最後のログイン（%{since}）からの出来事:'
       mention: "%{name} さんがあなたに返信しました:"
       new_followers_summary:
-        other: また、離れている間に%{count} 人の新たなフォロワーを獲得しました！
+        other: また、離れている間に%{count} 人の新たなフォロワーを獲得しました!
       subject:
         other: "新しい%{count}件の通知 \U0001F418"
       title: 不在の間に…
@@ -794,7 +794,7 @@ ja:
       subject: "%{name} さんにお気に入りに登録されました"
       title: 新たなお気に入り登録
     follow:
-      body: "%{name} さんにフォローされています！"
+      body: "%{name} さんにフォローされています!"
       subject: "%{name} さんにフォローされています"
       title: 新たなフォロワー
     follow_request:
@@ -855,12 +855,12 @@ ja:
     remove_selected_follows: 選択したユーザーをフォロー解除
     status: 状態
   remote_follow:
-    acct: あなたの ユーザー名@ドメイン を入力してください
+    acct: あなたの ユーザー名@ドメイン を入力して下さい
     missing_resource: リダイレクト先が見つかりませんでした
-    no_account_html: アカウントをお持ちではないですか？<a href='%{sign_up_path}' target='_blank'>こちら</a>からサインアップできます
+    no_account_html: アカウントをお持ちではないですか?<a href='%{sign_up_path}' target='_blank'>こちら</a>からサインアップできます
     proceed: フォローする
     prompt: 'フォローしようとしています:'
-    reason_html: "<strong>なぜこの手順が必要でしょうか？</strong><code>%{instance}</code>はあなたが登録されているサーバーではないかもしれないので、まずあなたのサーバーに転送する必要があります。"
+    reason_html: "<strong>なぜこの手順が必要でしょうか?</strong><code>%{instance}</code>はあなたが登録されているサーバーではないかもしれないので、まずあなたのサーバーに転送する必要があります。"
   remote_interaction:
     favourite:
       proceed: お気に入り登録する
@@ -874,7 +874,7 @@ ja:
   scheduled_statuses:
     over_daily_limit: その日予約できる投稿数 %{limit} を超えています
     over_total_limit: 予約できる投稿数 %{limit} を超えています
-    too_soon: より先の時間を指定してください
+    too_soon: より先の時間を指定して下さい
   sessions:
     activity: 最後のアクティビティ
     browser: ブラウザ
@@ -929,15 +929,15 @@ ja:
     featured_tags: 注目のハッシュタグ
     identity_proofs: Identity proofs
     import: データのインポート
-    import_and_export: インポート・エクスポート
+    import_and_export: インポート･エクスポート
     migrate: アカウントの引っ越し
     notifications: 通知
     preferences: ユーザー設定
     profile: プロフィール
-    relationships: フォロー・フォロワー
+    relationships: フォロー･フォロワー
     two_factor_authentication: 二段階認証
   spam_check:
-    spam_detected_and_silenced: これは自動通報です。スパムが検出されたため、当該送信者は自動的にサイレンスに設定されました。もしこれが誤りである場合、アカウントのサイレンスを解除してください。
+    spam_detected_and_silenced: これは自動通報です。スパムが検出されたため、当該送信者は自動的にサイレンスに設定されました。もしこれが誤りである場合、アカウントのサイレンスを解除して下さい。
   statuses:
     attached:
       description: '添付: %{attached}'
@@ -980,36 +980,36 @@ ja:
   terms:
     body_html: |
       <h2>プライバシーポリシー</h2>
-      <h3 id="collect">どのような情報を収集しますか？</h3>
+      <h3 id="collect">どのような情報を収集しますか?</h3>
 
       <ul>
-      <li><em>基本的なアカウント情報</em>: 当サイトに登録すると、ユーザー名・メールアドレス・パスワードの入力を求められることがあります。また表示名や自己紹介・プロフィール画像・ヘッダー画像といった追加のプロフィールを登録できます。ユーザー名・表示名・自己紹介・プロフィール画像・ヘッダー画像は常に公開されます。</li>
-      <li><em>投稿・フォロー・その他公開情報</em>: フォローしているユーザーの一覧は一般公開されます。フォロワーも同様です。メッセージを投稿する際、日時だけでなく投稿に使用したアプリケーション名も記録されます。メッセージには写真や動画といった添付メディアを含むことがあります。「公開」や「未収載」の投稿は一般公開されます。プロフィールに投稿を載せるとそれもまた公開情報となります。投稿はフォロワーに配信されます。場合によっては他のサーバーに配信され、そこにコピーが保存されることを意味します。投稿を削除した場合も同様にフォロワーに配信されます。他の投稿をリブログやお気に入り登録する行動は常に公開されます。</li>
-      <li><em>「ダイレクト」と「フォロワー限定」投稿</em>: すべての投稿はサーバーに保存され、処理されます。「フォロワー限定」投稿はフォロワーと投稿に書かれたユーザーに配信されます。「ダイレクト」投稿は投稿に書かれたユーザーにのみ配信されます。場合によっては他のサーバーに配信され、そこにコピーが保存されることを意味します。私たちはこれらの閲覧を一部の許可された者に限定するよう誠意を持って努めます。しかし他のサーバーにおいても同様に扱われるとは限りません。したがって、相手の所属するサーバーを吟味することが重要です。設定で新しいフォロワーの承認または拒否を手動で行うよう切り替えることもできます。<em>サーバー管理者は「ダイレクト」や「フォロワー限定」投稿も閲覧する可能性があることを忘れないでください。</em>また受信者がスクリーンショットやコピー、もしくは共有する可能性があることを忘れないでください。<em>いかなる危険な情報もMastodon上で共有しないでください。</em></li>
+      <li><em>基本的なアカウント情報</em>: 当サイトに登録すると、ユーザー名･メールアドレス･パスワードの入力を求められることがあります。また表示名や自己紹介･プロフィール画像･ヘッダー画像といった追加のプロフィールを登録できます。ユーザー名･表示名･自己紹介･プロフィール画像･ヘッダー画像は常に公開されます。</li>
+      <li><em>投稿･フォロー･その他公開情報</em>: フォローしているユーザーの一覧は一般公開されます。フォロワーも同様です。メッセージを投稿する際、日時だけでなく投稿に使用したアプリケーション名も記録されます。メッセージには写真や動画といった添付メディアを含むことがあります。「公開」や「未収載」の投稿は一般公開されます。プロフィールに投稿を載せるとそれもまた公開情報となります。投稿はフォロワーに配信されます。場合によっては他のサーバーに配信され、そこにコピーが保存されることを意味します。投稿を削除した場合も同様にフォロワーに配信されます。他の投稿をリブログやお気に入り登録する行動は常に公開されます。</li>
+      <li><em>「ダイレクト」と「フォロワー限定」投稿</em>: すべての投稿はサーバーに保存され、処理されます。「フォロワー限定」投稿はフォロワーと投稿に書かれたユーザーに配信されます。「ダイレクト」投稿は投稿に書かれたユーザーにのみ配信されます。場合によっては他のサーバーに配信され、そこにコピーが保存されることを意味します。私たちはこれらの閲覧を一部の許可された者に限定するよう誠意を持って努めます。しかし他のサーバーにおいても同様に扱われるとは限りません。したがって、相手の所属するサーバーを吟味することが重要です。設定で新しいフォロワーの承認または拒否を手動で行うよう切り替えることもできます。<em>サーバー管理者は「ダイレクト」や「フォロワー限定」投稿も閲覧する可能性があることを忘れないで下さい。</em>また受信者がスクリーンショットやコピー、もしくは共有する可能性があることを忘れないで下さい。<em>いかなる危険な情報もMastodon上で共有しないで下さい。</em></li>
       <li><em>IPアドレスやその他メタデータ</em>: ログインする際IPアドレスだけでなくブラウザーアプリケーション名を記録します。ログインしたセッションはすべてユーザー設定で見直し、取り消すことができます。使用されている最新のIPアドレスは最大12ヵ月間保存されます。またサーバーへのIPアドレスを含むすべてのリクエストのログを保持することがあります。</li>
       </ul>
 
       <hr class="spacer" />
 
-      <h3 id="use">情報を何に使用しますか？</h3>
+      <h3 id="use">情報を何に使用しますか?</h3>
 
       <p>収集した情報は次の用途に使用されることがあります:</p>
 
       <ul>
       <li>Mastodonのコア機能の提供: ログインしている間にかぎり他の人たちと投稿を通じて交流することができます。例えば自分専用のホームタイムラインで投稿をまとめて読むために他の人たちをフォローできます。</li>
       <li>コミュニティ維持の補助: 例えばIPアドレスを既知のものと比較し、BAN回避目的の複数登録者やその他違反者を判別します。</li>
-      <li>提供されたメールアドレスはお知らせの送信・投稿に対するリアクションやメッセージ送信の通知・お問い合わせやその他要求や質問への返信に使用されることがあります。</li>
+      <li>提供されたメールアドレスはお知らせの送信･投稿に対するリアクションやメッセージ送信の通知･お問い合わせやその他要求や質問への返信に使用されることがあります。</li>
       </ul>
 
       <hr class="spacer" />
 
-      <h3 id="protect">情報をどのように保護しますか？</h3>
+      <h3 id="protect">情報をどのように保護しますか?</h3>
 
-      <p>私たちはあなたが入力・送信する際や自身の情報にアクセスする際に個人情報を安全に保つため、さまざまなセキュリティ上の対策を実施します。特にブラウザーセッションだけでなくアプリケーションとAPI間の通信もSSLによって保護されます。またパスワードは強力な不可逆アルゴリズムでハッシュ化されます。二段階認証を有効にし、アカウントへのアクセスをさらに安全にすることができます。</p>
+      <p>私たちはあなたが入力･送信する際や自身の情報にアクセスする際に個人情報を安全に保つため、さまざまなセキュリティ上の対策を実施します。特にブラウザーセッションだけでなくアプリケーションとAPI間の通信もSSLによって保護されます。またパスワードは強力な不可逆アルゴリズムでハッシュ化されます。二段階認証を有効にし、アカウントへのアクセスをさらに安全にすることができます。</p>
 
       <hr class="spacer" />
 
-      <h3 id="data-retention">データ保持方針はどうなっていますか？</h3>
+      <h3 id="data-retention">データ保持方針はどうなっていますか?</h3>
 
       <p>私たちは次のように誠意を持って努めます:</p>
 
@@ -1018,13 +1018,13 @@ ja:
       <li>登録されたユーザーに関連付けられたIPアドレスを12ヵ月以内の間保持します。</li>
       </ul>
 
-      <p>あなたは投稿・添付メディア・プロフィール画像・ヘッダー画像を含む自身のデータのアーカイブを要求し、ダウンロードすることができます。</p>
+      <p>あなたは投稿･添付メディア･プロフィール画像･ヘッダー画像を含む自身のデータのアーカイブを要求し、ダウンロードすることができます。</p>
 
       <p>あなたはいつでもアカウントの削除を要求できます。削除は取り消すことができません。</p>
 
       <hr class="spacer"/>
 
-      <h3 id="cookies">クッキーを使用していますか？</h3>
+      <h3 id="cookies">クッキーを使用していますか?</h3>
 
       <p>はい。クッキーは (あなたが許可した場合に) WebサイトやサービスがWebブラウザーを介してコンピューターに保存する小さなファイルです。使用することでWebサイトがブラウザーを識別し、登録済みのアカウントがある場合関連付けます。</p>
 
@@ -1032,21 +1032,21 @@ ja:
 
       <hr class="spacer" />
 
-      <h3 id="disclose">なんらかの情報を外部に提供していますか？</h3>
+      <h3 id="disclose">なんらかの情報を外部に提供していますか?</h3>
 
-      <p>私たちは個人を特定できる情報を外部へ販売・取引・その他方法で渡すことはありません。これには当サイトの運営・業務遂行・サービス提供を行ううえで補助する信頼できる第三者をこの機密情報の保護に同意するかぎり含みません。法令の遵守やサイトポリシーの施行、権利・財産・安全の保護に適切と判断した場合、あなたの情報を公開することがあります。</p>
+      <p>私たちは個人を特定できる情報を外部へ販売･取引･その他方法で渡すことはありません。これには当サイトの運営･業務遂行･サービス提供を行ううえで補助する信頼できる第三者をこの機密情報の保護に同意するかぎり含みません。法令の遵守やサイトポリシーの施行、権利･財産･安全の保護に適切と判断した場合、あなたの情報を公開することがあります。</p>
 
       <p>あなたの公開情報はネットワーク上の他のサーバーにダウンロードされることがあります。相手が異なるサーバーに所属する場合、「公開」と「フォロワー限定」投稿はフォロワーの所属するサーバーに配信され、「ダイレクト」投稿は受信者の所属するサーバーに配信されます。</p>
 
-      <p>あなたがアカウントの使用をアプリケーションに許可すると、承認した権限の範囲内で公開プロフィール情報・フォローリスト・フォロワー・リスト・すべての投稿・お気に入り登録にアクセスできます。アプリケーションはメールアドレスやパスワードに決してアクセスできません。</p>
+      <p>あなたがアカウントの使用をアプリケーションに許可すると、承認した権限の範囲内で公開プロフィール情報･フォローリスト･フォロワー･リスト･すべての投稿･お気に入り登録にアクセスできます。アプリケーションはメールアドレスやパスワードに決してアクセスできません。</p>
 
       <hr class="spacer" />
 
       <h3 id="children">児童によるサイト利用について</h3>
 
-      <p>サーバーがEUまたはEEA圏内にある場合: 当サイト・製品・サービスは16歳以上の人を対象としています。あなたが16歳未満の場合、GDPR (<a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">General Data Protection Regulation</a> - EU一般データ保護規則) により当サイトを使用できません。</p>
+      <p>サーバーがEUまたはEEA圏内にある場合: 当サイト･製品･サービスは16歳以上の人を対象としています。あなたが16歳未満の場合、GDPR (<a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">General Data Protection Regulation</a> - EU一般データ保護規則) により当サイトを使用できません。</p>
 
-      <p>サーバーが米国にある場合: 当サイト・製品・サービスは13歳以上の人を対象としています。あなたが13歳未満の場合、COPPA (<a href="https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act">Children's Online Privacy Protection Act</a> - 児童オンラインプライバシー保護法) により当サイトを使用できません。</p>
+      <p>サーバーが米国にある場合: 当サイト･製品･サービスは13歳以上の人を対象としています。あなたが13歳未満の場合、COPPA (<a href="https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act">Children's Online Privacy Protection Act</a> - 児童オンラインプライバシー保護法) により当サイトを使用できません。</p>
 
       <p>サーバーが別の管轄区域にある場合、法的要件は異なることがあります。</p>
 
@@ -1059,7 +1059,7 @@ ja:
       <p>この文章のライセンスはCC-BY-SAです。最終更新日は2018年3月7日です。</p>
 
       <p>オリジナルの出典: <a href="https://github.com/discourse/discourse">Discourse privacy policy</a></p>
-    title: "%{instance} 利用規約・プライバシーポリシー"
+    title: "%{instance} 利用規約･プライバシーポリシー"
   themes:
     contrast: Mastodon (ハイコントラスト)
     default: Mastodon (ダーク)
@@ -1071,24 +1071,24 @@ ja:
       default: "%Y年%m月%d日 %H:%M"
       month: "%Y年 %b"
   two_factor_authentication:
-    code_hint: 確認するには認証アプリで表示されたコードを入力してください
+    code_hint: 確認するには認証アプリで表示されたコードを入力して下さい
     description_html: "<strong>二段階認証</strong>を有効にするとログイン時、認証アプリからコードを入力する必要があります。"
     disable: 無効
     enable: 有効
     enabled: 二段階認証は有効になっています
     enabled_success: 二段階認証が有効になりました
     generate_recovery_codes: リカバリーコードを生成
-    instructions_html: "<strong>Google Authenticatorか、もしくはほかのTOTPアプリでこのQRコードをスキャンしてください。</strong>これ以降、ログインするときはそのアプリで生成されるコードが必要になります。"
+    instructions_html: "<strong>Google Authenticatorか、もしくはほかのTOTPアプリでこのQRコードをスキャンして下さい。</strong>これ以降、ログインするときはそのアプリで生成されるコードが必要になります。"
     lost_recovery_codes: リカバリーコードを使用すると携帯電話を紛失した場合でもアカウントにアクセスできるようになります。 リカバリーコードを紛失した場合もここで再生成することができますが、古いリカバリーコードは無効になります。
-    manual_instructions: 'QRコードがスキャンできず、手動での登録を希望の場合はこのシークレットコードを利用してください。:'
+    manual_instructions: 'QRコードがスキャンできず、手動での登録を希望の場合はこのシークレットコードを利用して下さい。:'
     recovery_codes: リカバリーコード
     recovery_codes_regenerated: リカバリーコードが再生成されました
-    recovery_instructions_html: 携帯電話を紛失した場合、以下の内どれかのリカバリーコードを使用してアカウントへアクセスすることができます。<strong>リカバリーコードは大切に保全してください。</strong>たとえば印刷してほかの重要な書類と一緒に保管することができます。
+    recovery_instructions_html: 携帯電話を紛失した場合、以下の内どれかのリカバリーコードを使用してアカウントへアクセスすることができます。<strong>リカバリーコードは大切に保全して下さい。</strong>たとえば印刷してほかの重要な書類と一緒に保管することができます。
     setup: 初期設定
-    wrong_code: コードが間違っています。サーバー上の時間とデバイス上の時間が一致していますか？
+    wrong_code: コードが間違っています。サーバー上の時間とデバイス上の時間が一致していますか?
   user_mailer:
     backup_ready:
-      explanation: Mastodonアカウントのアーカイブを受け付けました。今すぐダウンロードできます！
+      explanation: Mastodonアカウントのアーカイブを受け付けました。今すぐダウンロードできます!
       subject: アーカイブの準備ができました
       title: アーカイブの取り出し
     warning:
@@ -1114,18 +1114,18 @@ ja:
       edit_profile_step: アイコンやヘッダーの画像をアップロードしたり、表示名を変更したりして、自分のプロフィールをカスタマイズすることができます。また、誰かからの新規フォローを許可する前にその人の様子を見ておきたい場合、アカウントを承認制にすることもできます。
       explanation: 始めるにあたってのアドバイスです
       final_action: 始めましょう
-      final_step: 'さあ、始めましょう！ たとえフォロワーがまだいなくても、あなたの公開した投稿はローカルタイムラインやハッシュタグなどを通じて誰かの目にとまるはずです。自己紹介をしたいときには #introductions ハッシュタグが便利かもしれません。'
+      final_step: 'さあ、始めましょう! たとえフォロワーがまだいなくても、あなたの公開した投稿はローカルタイムラインやハッシュタグなどを通じて誰かの目にとまるはずです。自己紹介をしたいときには #introductions ハッシュタグが便利かもしれません。'
       full_handle: あなたの正式なユーザーID
       full_handle_hint: 別のサーバーの友達とフォローやメッセージをやり取りする際には、これを伝えることになります。
       review_preferences_action: 設定の変更
-      review_preferences_step: 受け取りたいメールの種類や投稿のデフォルト公開範囲など、ユーザー設定を必ず済ませておきましょう。目が回らない自信があるなら、アニメーション GIF を自動再生する設定もご検討ください。
+      review_preferences_step: 受け取りたいメールの種類や投稿のデフォルト公開範囲など、ユーザー設定を必ず済ませておきましょう。目が回らない自信があるなら、アニメーション GIF を自動再生する設定もご検討下さい。
       subject: Mastodon へようこそ
       tip_federated_timeline: 連合タイムラインは Mastodon ネットワークの流れを見られるものです。ただしあなたと同じサーバーの人がフォローしている人だけが含まれるので、それが全てではありません。
       tip_following: 最初は、サーバーの管理者をフォローした状態になっています。もっと興味のある人たちを見つけるには、ローカルタイムラインと連合タイムラインを確認してみましょう。
-      tip_local_timeline: ローカルタイムラインは %{instance} にいる人々の流れを見られるものです。彼らはあなたと同じサーバーにいる隣人のようなものです！
-      tip_mobile_webapp: お使いのモバイル端末で、ブラウザから Mastodon をホーム画面に追加できますか？ もし追加できる場合、プッシュ通知の受け取りなど、まるで「普通の」アプリのような機能が楽しめます！
+      tip_local_timeline: ローカルタイムラインは %{instance} にいる人々の流れを見られるものです。彼らはあなたと同じサーバーにいる隣人のようなものです!
+      tip_mobile_webapp: お使いのモバイル端末で、ブラウザから Mastodon をホーム画面に追加できますか? もし追加できる場合、プッシュ通知の受け取りなど、まるで「普通の」アプリのような機能が楽しめます!
       tips: 豆知識
-      title: ようこそ、%{name}！
+      title: ようこそ、%{name}!
   users:
     follow_limit_reached: あなたは現在 %{limit} 人以上フォローできません
     invalid_email: メールアドレスが無効です
