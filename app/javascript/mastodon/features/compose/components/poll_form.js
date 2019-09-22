@@ -77,7 +77,7 @@ class Option extends React.PureComponent {
 
           <AutosuggestInput
             placeholder={intl.formatMessage(messages.option_placeholder, { number: index + 1 })}
-            maxLength={25}
+            maxLength={200}
             value={title}
             onChange={this.handleOptionTitleChange}
             suggestions={this.props.suggestions}
@@ -142,18 +142,42 @@ class PollForm extends ImmutablePureComponent {
         </ul>
 
         <div className='poll__footer'>
-          {options.size < 4 && (
+          {options.size < 20 && (
             <button className='button button-secondary' onClick={this.handleAddOption}><Icon id='plus' /> <FormattedMessage {...messages.add_option} /></button>
           )}
 
           <select value={expiresIn} onChange={this.handleSelectDuration}>
+            <option value={60}>{intl.formatMessage(messages.minutes, { number: 1 })}</option>
+            <option value={120}>{intl.formatMessage(messages.minutes, { number: 2 })}</option>
+            <option value={180}>{intl.formatMessage(messages.minutes, { number: 3 })}</option>
+            <option value={240}>{intl.formatMessage(messages.minutes, { number: 4 })}</option>
             <option value={300}>{intl.formatMessage(messages.minutes, { number: 5 })}</option>
+            <option value={600}>{intl.formatMessage(messages.minutes, { number: 10 })}</option>
+            <option value={900}>{intl.formatMessage(messages.minutes, { number: 15 })}</option>
+            <option value={1200}>{intl.formatMessage(messages.minutes, { number: 20 })}</option>
             <option value={1800}>{intl.formatMessage(messages.minutes, { number: 30 })}</option>
+            <option value={2700}>{intl.formatMessage(messages.minutes, { number: 45 })}</option>
             <option value={3600}>{intl.formatMessage(messages.hours, { number: 1 })}</option>
+            <option value={7200}>{intl.formatMessage(messages.hours, { number: 2 })}</option>
+            <option value={10800}>{intl.formatMessage(messages.hours, { number: 3 })}</option>
             <option value={21600}>{intl.formatMessage(messages.hours, { number: 6 })}</option>
+            <option value={32400}>{intl.formatMessage(messages.hours, { number: 9 })}</option>
+            <option value={43200}>{intl.formatMessage(messages.hours, { number: 12 })}</option>
+            <option value={64800}>{intl.formatMessage(messages.hours, { number: 18 })}</option>
             <option value={86400}>{intl.formatMessage(messages.days, { number: 1 })}</option>
+            <option value={172800}>{intl.formatMessage(messages.days, { number: 2 })}</option>
             <option value={259200}>{intl.formatMessage(messages.days, { number: 3 })}</option>
+            <option value={345600}>{intl.formatMessage(messages.days, { number: 4 })}</option>
+            <option value={432000}>{intl.formatMessage(messages.days, { number: 5 })}</option>
+            <option value={518400}>{intl.formatMessage(messages.days, { number: 6 })}</option>
             <option value={604800}>{intl.formatMessage(messages.days, { number: 7 })}</option>
+            <option value={864000}>{intl.formatMessage(messages.days, { number: 10 })}</option>
+            <option value={1209600}>{intl.formatMessage(messages.days, { number: 14 })}</option>
+            <option value={1296000}>{intl.formatMessage(messages.days, { number: 15 })}</option>
+            <option value={1728000}>{intl.formatMessage(messages.days, { number: 20 })}</option>
+            <option value={1814400}>{intl.formatMessage(messages.days, { number: 21 })}</option>
+            <option value={2419200}>{intl.formatMessage(messages.days, { number: 28 })}</option>
+            <option value={2592000}>{intl.formatMessage(messages.days, { number: 30 })}</option>
           </select>
         </div>
       </div>
