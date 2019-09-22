@@ -3,18 +3,12 @@
 class StatusesIndex < Chewy::Index
   settings index: { refresh_interval: '15m' }, analysis: {
     tokenizer: {
-      english_stop: {
       sudachi_tokenizer: {
-        type: 'stop',
         type: 'sudachi_tokenizer',
-        stopwords: '_english_',
         mode: 'search',
-      },
         discard_punctuation: true,
-      english_stemmer: {
         resources_path: '/etc/elasticsearch',
-        type: 'stemmer',
-        settings_path: '/etc/elasticsearch/sudachi.json',
+        settings_path: '/etc/elasticsearch/sudachi.json', 
       },
     },
     analyzer: {
