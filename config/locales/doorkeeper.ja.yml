@@ -25,14 +25,14 @@ ja:
         edit: 編集
         submit: 送信
       confirmations:
-        destroy: 本当に削除しますか？
+        destroy: 本当に削除しますか?
       edit:
         title: アプリの編集
       form:
-        error: フォームにエラーが無いか確認してください
+        error: フォームにエラーが無いか確認して下さい
       help:
         native_redirect_uri: ローカルテストに %{native_redirect_uri} を使用
-        redirect_uri: 一行に一つのURLを入力してください
+        redirect_uri: 一行に一つのURLを入力して下さい
         scopes: アクセス権は半角スペースで区切ることができます。 空白のままにするとデフォルトを使用します。
       index:
         application: アプリ
@@ -68,7 +68,7 @@ ja:
       buttons:
         revoke: 取消
       confirmations:
-        revoke: 本当に取り消しますか？
+        revoke: 本当に取り消しますか?
       index:
         application: アプリ名
         created_at: 許可した日時
@@ -83,7 +83,7 @@ ja:
         invalid_grant: 指定された認証許可は無効であるか、期限切れ、取り消されている、リダイレクトURIの不一致、または別のクライアントに発行されています。
         invalid_redirect_uri: 無効なリダイレクトURIが含まれています。
         invalid_request: リクエストに必要なパラメータが欠けているか、サポートされていないパラメータが含まれている、または不正なフォーマットです。
-        invalid_resource_owner: 指定されたリソース所有者のクレデンシャルが無効であるか、リソース所有者が見つかりません
+        invalid_resource_owner: 指定されたリソース所有者のクレデンシャルが無効であるか、リソース所有者が見つかりません。
         invalid_scope: 要求されたアクセス権は無効であるか、不明、または不正なフォーマットです。
         invalid_token:
           expired: アクセストークンの有効期限が切れています
@@ -93,8 +93,8 @@ ja:
         server_error: 認証サーバーに予期せぬ例外が発生したため、リクエストを実行できなくなりました。
         temporarily_unavailable: 現在、認証サーバーに一時的な過負荷が掛かっているか、またはメンテナンス中のため、リクエストを処理できません。
         unauthorized_client: クライアントはこのメゾットで要求を実行する権限がありません。
-        unsupported_grant_type: 指定された認証許可タイプは認証サーバでサポートされていません。
-        unsupported_response_type: このレスポンスタイプは認証サーバでサポートされていません。
+        unsupported_grant_type: 指定された認証許可タイプは認証サーバーでサポートされていません。
+        unsupported_response_type: このレスポンスタイプは認証サーバーでサポートされていません。
     flash:
       applications:
         create:
