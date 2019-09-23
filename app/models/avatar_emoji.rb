@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class AvatarEmoji
+  extend ActiveModel::Naming
   include ActiveModel::Serialization
 
   attr_reader :account, :shortcode
