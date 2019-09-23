@@ -21,7 +21,7 @@ module Mastodon
     end
 
     def suffix
-      '-h3zjp (Custom)'
+      '-h3zjp'
     end
 
     def to_a
