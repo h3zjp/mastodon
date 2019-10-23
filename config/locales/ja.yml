@@ -1066,6 +1066,8 @@ ja:
     mastodon-light: Mastodon (ライト)
     gplus-theme: G+ Theme for Mastodon
     gplus-theme-schwarz: G+ Theme Schwarz
+    instance-ticker-type-0: インスタンス･ティッカー Type-0
+    instance-ticker-type-1: インスタンス･ティッカー Type-1
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
