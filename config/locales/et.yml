@@ -17,11 +17,7 @@ et:
     contact_unavailable: Pole saadaval
     discover_users: Avasta kasutajaid
     documentation: Dokumentatsioon
-    extended_description_html: |
-      <h3>Hea koht reeglite jaoks</h3>
-      <p>Laiendatud kirjeldus pole veel üles seadistatud.</p>
     federation_hint_html: Kui Teil on kasutaja %{instance}-is, saate Te jälgida inimesi üks kõik millisel Mastodoni serveril ja kaugemalgi.
-    generic_description: "%{domain} on ainult üks server terves võrgus"
     get_apps: Proovi mobiilirakendusi
     hosted_on: Mastodon majutatud %{domain}-is
     instance_actor_flash: |
@@ -724,9 +720,6 @@ et:
       too_many: Ei saa lisada rohkem, kui 4 faili
   migrations:
     acct: uue konto kasutajanimi@domeen
-    currently_redirecting: 'Teie profiil on sätestatud suunama ümber:'
-    proceed: Salvesta
-    updated_msg: Teie konto migreerumissätete uuendamine õnnestus!
   moderation:
     title: Moderatsioon
   notification_mailer:
@@ -890,8 +883,6 @@ et:
     profile: Profiil
     relationships: Jälgitud ja jälgijad
     two_factor_authentication: Kahesammuline autentimine
-  spam_check:
-    spam_detected_and_silenced: See on automatiseeritud teavitus. Rämpspost on tuvastatud ja nende autor on automaatselt vaigistatud. Kui see on viga, palun eemaldage vaigistus.
   statuses:
     attached:
       description: 'Manused: %{attached}'

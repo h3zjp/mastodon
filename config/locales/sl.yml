@@ -17,11 +17,7 @@ sl:
     contact_unavailable: Ni na voljo
     discover_users: Odkrijte uporabnike
     documentation: Dokumentacija
-    extended_description_html: |
-      <h3>Dober prostor za pravila</h3>
-      <p>Razširjen opis še ni bil nastavljen.</p>
     federation_hint_html: Z računom na %{instance} boste lahko spremljali ljudi na kateremkoli Mastodon strežniku.
-    generic_description: "%{domain} je en strežnik v omrežju"
     get_apps: Poskusite mobilno aplikacijo
     hosted_on: Mastodon gostuje na %{domain}
     instance_actor_flash: |
@@ -734,9 +730,6 @@ sl:
       too_many: Ni možno priložiti več kot 4 datoteke
   migrations:
     acct: username@domain novega računa
-    currently_redirecting: 'Vaš profil je preusmerjen na:'
-    proceed: Shrani
-    updated_msg: Nastavitev selitve računa je bila uspešno posodobljena!
   moderation:
     title: Moderiranje
   notification_mailer:
@@ -902,8 +895,6 @@ sl:
     profile: Profil
     relationships: Sledenja in sledilci
     two_factor_authentication: Dvofaktorsko overjanje
-  spam_check:
-    spam_detected_and_silenced: To je samodejno poročilo. Zaznana je bila neželena pošta in pošiljatelj je bil samodejno utišan. Če je prišlo do napake, prekličite utišanje računa.
   statuses:
     attached:
       description: 'Priloženo: %{attached}'
