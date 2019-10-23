@@ -19,15 +19,8 @@ ja:
     documentation: ドキュメント
     federation_hint_html: "%{instance} のアカウントひとつでどんなMastodon互換サーバーのユーザーでもフォローできるでしょう。"
     get_apps: モバイルアプリを試す
-<<<<<<< HEAD
     hosted_on: Mastodon hosted by <a href="https://h3z.jp/" target="_blank" style="color:#9baec8;">h3zjp</a>
-    instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、個人のアカウントではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックする以外の目的でブロックしないで下さい。サーバー全体をブロックする場合、ドメインブロックを使用して下さい。
-=======
-    hosted_on: Mastodon hosted on %{domain}
-    instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、特定のユーザーを示すものではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックするときは、このアカウントをブロックせずに、ドメインブロックを使用してください。
->>>>>>> upstream/master
-
-'
+    instance_actor_flash: 'このアカウントはサーバーそのものを示す仮想的なもので、特定のユーザーを示すものではありません。これはサーバーの連合のために使用されます。サーバー全体をブロックするときは、このアカウントをブロックせずに、ドメインブロックを使用して下さい。'
     learn_more: もっと詳しく
     privacy_policy: プライバシーポリシー
     see_whats_happening: やりとりを見てみる
@@ -235,12 +228,8 @@ ja:
       copied_msg: 絵文字のコピーをローカルに作成しました
       copy: コピー
       copy_failed_msg: 絵文字のコピーをローカルに作成できませんでした
-<<<<<<< HEAD
-      created_msg: 絵文字の追加に成功しました!
-=======
       create_new_category: カテゴリーを作成
-      created_msg: 絵文字の追加に成功しました！
->>>>>>> upstream/master
+      created_msg: 絵文字の追加に成功しました!
       delete: 削除
       destroyed_msg: 絵文字の削除に成功しました!
       disable: 無効化
@@ -600,19 +589,13 @@ ja:
     checkbox_agreement_without_rules_html: <a href="%{terms_path}" target="_blank">利用規約</a> に同意します
     delete_account: アカウントの削除
     delete_account_html: アカウントを削除したい場合、<a href="%{path}">こちら</a> から手続きが行えます。削除する前に、確認画面があります。
-<<<<<<< HEAD
-    didnt_get_confirmation: 確認メールを受信できませんか?
-    forgot_password: パスワードをお忘れですか?
-    invalid_reset_password_token: パスワードリセットトークンが正しくないか期限切れです。もう一度リクエストして下さい。
-=======
     description:
       prefix_invited_by_user: "@%{name} があなたをこの Mastodon サーバーに招待しました"
       prefix_sign_up: 今すぐ Mastodon を始めよう！
-      suffix: アカウントがあれば、どんな Mastodon 互換サーバーのユーザーでもフォローしたりメッセージをやり取りできるようになります！
-    didnt_get_confirmation: 確認メールを受信できませんか？
-    forgot_password: パスワードをお忘れですか？
-    invalid_reset_password_token: パスワードリセットトークンが正しくないか期限切れです。もう一度リクエストしてください。
->>>>>>> upstream/master
+      suffix: アカウントがあれば、どんな Mastodon 互換サーバーのユーザーでもフォローしたりメッセージをやり取りできるようになります!
+    didnt_get_confirmation: 確認メールを受信できませんか?
+    forgot_password: パスワードをお忘れですか?
+    invalid_reset_password_token: パスワードリセットトークンが正しくないか期限切れです。もう一度リクエストして下さい。
     login: ログイン
     logout: ログアウト
     migrate_account: 別のアカウントに引っ越す
@@ -636,12 +619,8 @@ ja:
       confirming: メールアドレスの確認が完了するのを待っています。
       functional: アカウントは完全に機能しています。
       pending: あなたの申請は現在サーバー管理者による審査待ちです。これにはしばらくかかります。申請が承認されるとメールが届きます。
-<<<<<<< HEAD
-    trouble_logging_in: ログインできませんか?
-=======
       redirecting_to: アカウントは %{acct} に引っ越し設定されているため非アクティブになっています。
-    trouble_logging_in: ログインできませんか？
->>>>>>> upstream/master
+    trouble_logging_in: ログインできませんか?
   authorize_follow:
     already_following: あなたは既にこのアカウントをフォローしています
     error: 残念ながら、リモートアカウント情報の取得中にエラーが発生しました
@@ -673,13 +652,9 @@ ja:
       x_months: "%{count}月"
       x_seconds: "%{count}秒"
   deletes:
-<<<<<<< HEAD
-    confirm_password: 本人確認のため、現在のパスワードを入力して下さい
-=======
     challenge_not_passed: 入力された情報は正しくありません
-    confirm_password: 本人確認のため、現在のパスワードを入力してください
-    confirm_username: 確認のためユーザー名を入力してください
->>>>>>> upstream/master
+    confirm_password: 本人確認のため、現在のパスワードを入力して下さい
+    confirm_username: 確認のためユーザー名を入力して下さい
     proceed: アカウントを削除する
     success_msg: アカウントは正常に削除されました
     warning:
@@ -832,11 +807,6 @@ ja:
       too_many: 追加できるファイルは4つまでです
   migrations:
     acct: 引っ越し先の ユーザー名@ドメイン
-<<<<<<< HEAD
-    currently_redirecting: 'あなたのプロフィールは引っ越し先が設定されています:'
-    proceed: 保存
-    updated_msg: アカウントの引っ越し設定を更新しました!
-=======
     cancel: 引っ越しを取り消す
     cancel_explanation: 引っ越しを取り消すと現在のアカウントが再度有効化されますが、引き継がれたフォロワーは戻されません。
     cancelled_msg: 引っ越し設定を取り消しました。
@@ -858,14 +828,13 @@ ja:
     set_redirect: 引っ越しを設定
     warning:
       backreference_required: まずは引っ越し先のアカウントでこのアカウントに対しエイリアスを作成する必要があります
-      before: '続行する前に、次の点を再度確認してください:'
+      before: '続行する前に、次の点を再度確認して下さい:'
       cooldown: 引っ越し後はクールダウン期間があります。その間再度引っ越すことはできません
       disabled_account: 引っ越した後はデータのエクスポートと再有効化を除きほとんどの機能が利用できなくなります
       followers: すべてのフォロワーを現在のアカウントから新しいアカウントに引き継ぎます
       only_redirect_html: または、<a href="%{path}">フォロワーを残したまま引っ越す</a>こともできます。
       other_data: その他のデータは自動的に引き継がれません
       redirect: プロフィールに引っ越し済みの通知が表示され、検索結果から除外されます
->>>>>>> upstream/master
   moderation:
     title: モデレーション
   notification_mailer:
@@ -1027,11 +996,7 @@ ja:
     relationships: フォロー･フォロワー
     two_factor_authentication: 二段階認証
   spam_check:
-<<<<<<< HEAD
-    spam_detected_and_silenced: これは自動通報です。スパムが検出されたため、当該送信者は自動的にサイレンスに設定されました。もしこれが誤りである場合、アカウントのサイレンスを解除して下さい。
-=======
     spam_detected: これは自動的に作成された通報です。スパムが検出されています。
->>>>>>> upstream/master
   statuses:
     attached:
       description: '添付: %{attached}'
@@ -1169,11 +1134,7 @@ ja:
       default: "%Y年%m月%d日 %H:%M"
       month: "%Y年 %b"
   two_factor_authentication:
-<<<<<<< HEAD
-    code_hint: 確認するには認証アプリで表示されたコードを入力して下さい
-=======
-    code_hint: 続行するには認証アプリで表示されたコードを入力してください
->>>>>>> upstream/master
+    code_hint: 続行するには認証アプリで表示されたコードを入力して下さい
     description_html: "<strong>二段階認証</strong>を有効にするとログイン時、認証アプリからコードを入力する必要があります。"
     disable: 無効
     enable: 有効
