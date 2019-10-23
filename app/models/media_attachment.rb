@@ -118,13 +118,8 @@ class MediaAttachment < ApplicationRecord
     original: VIDEO_FORMAT,
   }.freeze
 
-<<<<<<< HEAD
   IMAGE_LIMIT = 20.megabytes
   VIDEO_LIMIT = 100.megabytes
-=======
-  IMAGE_LIMIT = 10.megabytes
-  VIDEO_LIMIT = 40.megabytes
->>>>>>> upstream/master
 
   belongs_to :account,          inverse_of: :media_attachments, optional: true
   belongs_to :status,           inverse_of: :media_attachments, optional: true
