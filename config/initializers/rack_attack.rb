@@ -57,19 +57,19 @@ class Rack::Attack
     req.authenticated_user_id if req.api_request?
   end
 
-  throttle('throttle_unauthenticated_api', limit: 22_500, period: 5.minutes) do |req|
+  throttle('throttle_unauthenticated_api', limit: 20_000, period: 5.minutes) do |req|
     req.remote_ip if req.api_request? && req.unauthenticated?
   end
 
-  throttle('throttle_api_media', limit: 30, period: 30.minutes) do |req|
+  throttle('throttle_api_media', limit: 40, period: 10.minutes) do |req|
     req.authenticated_user_id if req.post? && req.path.start_with?('/api/v1/media')
   end
 
-  throttle('throttle_media_proxy', limit: 30, period: 10.minutes) do |req|
+  throttle('throttle_media_proxy', limit: 40, period: 10.minutes) do |req|
     req.remote_ip if req.path.start_with?('/media_proxy')
   end
 
-  throttle('throttle_api_sign_up', limit: 5, period: 30.minutes) do |req|
+  throttle('throttle_api_sign_up', limit: 5, period: 60.minutes) do |req|
     req.remote_ip if req.post? && req.path == '/api/v1/accounts'
   end
 
