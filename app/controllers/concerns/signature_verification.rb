@@ -175,4 +175,4 @@ module SignatureVerification
     return if account.local? || !account.activitypub?
     ActivityPub::FetchRemoteAccountService.new.call(account.uri, only_key: true)
   end
-en
+end
