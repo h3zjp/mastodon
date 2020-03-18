@@ -42,12 +42,8 @@
   "alert.rate_limited.message": "{retry_time, time, medium} 以降に再度実行して下さい。",
   "alert.rate_limited.title": "制限に達しました",
   "alert.unexpected.message": "不明なエラーが発生しました。",
-<<<<<<< HEAD
   "alert.unexpected.title": "エラー!",
-=======
-  "alert.unexpected.title": "エラー！",
   "announcement.announcement": "お知らせ",
->>>>>>> upstream/master
   "autosuggest_hashtag.per_week": "{count} 回 / 週",
   "boost_modal.combo": "次からは{combo}を押せばスキップできます",
   "bundle_column_error.body": "コンポーネントの読み込み中に問題が発生しました。",
@@ -112,13 +108,8 @@
   "confirmations.logout.confirm": "ログアウト",
   "confirmations.logout.message": "本当にログアウトしますか?",
   "confirmations.mute.confirm": "ミュート",
-<<<<<<< HEAD
-  "confirmations.mute.explanation": "これにより相手のトゥートと返信は見えなくなりますが、引き続きあなたをフォローしトゥートを見ることはできます。",
-  "confirmations.mute.message": "本当に{name}さんをミュートしますか?",
-=======
   "confirmations.mute.explanation": "これにより相手のトゥートと返信は見えなくなりますが、相手はあなたをフォローし続けトゥートを見ることができます。",
-  "confirmations.mute.message": "本当に{name}さんをミュートしますか？",
->>>>>>> upstream/master
+  "confirmations.mute.message": "本当に{name}さんをミュートしますか?",
   "confirmations.redraft.confirm": "削除して下書きに戻す",
   "confirmations.redraft.message": "本当にこのトゥートを削除して下書きに戻しますか? このトゥートへのお気に入り登録やブーストは失われ、返信は孤立することになります。",
   "confirmations.reply.confirm": "返信",
@@ -152,12 +143,8 @@
   "empty_column.account_timeline": "トゥートがありません!",
   "empty_column.account_unavailable": "プロフィールは利用できません",
   "empty_column.blocks": "まだ誰もブロックしていません。",
-<<<<<<< HEAD
-  "empty_column.community": "ローカルタイムラインはまだ使われていません。何か書いてみましょう!",
-=======
   "empty_column.bookmarked_statuses": "まだ何もブックマーク登録していません。ブックマーク登録するとここに表示されます。",
-  "empty_column.community": "ローカルタイムラインはまだ使われていません。何か書いてみましょう！",
->>>>>>> upstream/master
+  "empty_column.community": "ローカルタイムラインはまだ使われていません。何か書いてみましょう!",
   "empty_column.direct": "ダイレクトメッセージはまだありません。ダイレクトメッセージをやりとりすると、ここに表示されます。",
   "empty_column.domain_blocks": "非表示にしているドメインはありません。",
   "empty_column.favourited_statuses": "まだ何もお気に入り登録していません。お気に入り登録するとここに表示されます。",
@@ -439,7 +426,7 @@
   "upload_modal.description_placeholder": "あのイーハトーヴォのすきとおった風",
   "upload_modal.detect_text": "画像からテキストを検出",
   "upload_modal.edit_media": "メディアを編集",
-  "upload_modal.hint": "サムネイルの焦点にしたい場所をクリックするか円形の枠をその場所にドラッグしてください。",
+  "upload_modal.hint": "サムネイルの焦点にしたい場所をクリックするか円形の枠をその場所にドラッグして下さい。",
   "upload_modal.preview_label": "プレビュー ({ratio})",
   "upload_progress.label": "アップロード中...",
   "video.close": "動画を閉じる",
