@@ -242,7 +242,7 @@ class User < ApplicationRecord
   def activate_session(request)
     session_activations.activate(session_id: SecureRandom.hex,
                                  user_agent: request.user_agent,
-                                 ip: request.env['HTTP_X_FORWARDED_FOR']).session_id
+                                 ip: request.remote_ip).session_id
   end
 
   def clear_other_sessions(id)
