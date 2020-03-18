@@ -1,9 +1,4 @@
 version: 2
-<<<<<<< HEAD
-jobs:
-  build:
-    machine: true
-=======
 
 aliases:
   - &defaults
@@ -195,7 +190,6 @@ jobs:
     <<: *defaults
     docker:
       - image: circleci/node:12-buster
->>>>>>> upstream/master
     steps:
       - checkout
       - run:
@@ -220,12 +214,6 @@ workflows:
   version: 2
   build:
     jobs:
-<<<<<<< HEAD
-      - build:
-          filters:
-            branches:
-              only: master
-=======
       - install
       - install-ruby2.7:
           requires:
@@ -262,4 +250,3 @@ workflows:
       - check-i18n:
           requires:
             - install-ruby2.7
->>>>>>> upstream/master
