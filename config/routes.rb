@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'sidekiq/web'
+require 'sidekiq_unique_jobs/web'
 require 'sidekiq-scheduler/web'
 
 Sidekiq::Web.set :session_secret, Rails.application.secrets[:secret_key_base]
@@ -100,7 +100,9 @@ Rails.application.routes.draw do
   get '/settings', to: redirect('/settings/profile')
 
   namespace :settings do
-    resource :profile, only: [:show, :update]
+    resource :profile, only: [:show, :update] do
+      resources :pictures, only: :destroy
+    end
 
     get :preferences, to: redirect('/settings/preferences/appearance')
 
