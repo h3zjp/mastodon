@@ -92,12 +92,14 @@ class FanOutOnWriteService < BaseService
     Rails.logger.debug "Delivering status #{status.id} to public timeline"
 
     Redis.current.publish('timeline:public', @payload)
+      Redis.current.publish('timeline:public:remote', @payload)
   end
 
   def deliver_to_media(status)
     Rails.logger.debug "Delivering status #{status.id} to media timeline"
 
     Redis.current.publish('timeline:public:media', @payload)
+      Redis.current.publish('timeline:public:remote:media', @payload)
   end
 
   def deliver_to_own_conversation(status)
