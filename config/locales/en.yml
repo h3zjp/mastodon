@@ -1240,12 +1240,40 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     contrast: Mastodon (High contrast)
+    contrast-instance-ticker-0: Mastodon (High contrast) (Instance Ticker Type-0)
+    contrast-instance-ticker-1: Mastodon (High contrast) (Instance Ticker Type-1)
+    contrast-instance-ticker-2: Mastodon (High contrast) (Instance Ticker Type-2)
+    contrast-instance-ticker-10: Mastodon (High contrast) (Instance Ticker Type-10)
+    contrast-instance-ticker-11: Mastodon (High contrast) (Instance Ticker Type-11)
+    contrast-instance-ticker-12: Mastodon (High contrast) (Instance Ticker Type-12)
     default: Mastodon (Dark)
+    default-instance-ticker-0: Mastodon (Dark) (Instance Ticker Type-0)
+    default-instance-ticker-1: Mastodon (Dark) (Instance Ticker Type-1)
+    default-instance-ticker-2: Mastodon (Dark) (Instance Ticker Type-2)
+    default-instance-ticker-10: Mastodon (Dark) (Instance Ticker Type-10)
+    default-instance-ticker-11: Mastodon (Dark) (Instance Ticker Type-11)
+    default-instance-ticker-12: Mastodon (Dark) (Instance Ticker Type-12)
     mastodon-light: Mastodon (light)
+    mastodon-light-instance-ticker-0: Mastodon (light) (Instance Ticker Type-0)
+    mastodon-light-instance-ticker-1: Mastodon (light) (Instance Ticker Type-1)
+    mastodon-light-instance-ticker-2: Mastodon (light) (Instance Ticker Type-2)
+    mastodon-light-instance-ticker-10: Mastodon (light) (Instance Ticker Type-10)
+    mastodon-light-instance-ticker-11: Mastodon (light) (Instance Ticker Type-11)
+    mastodon-light-instance-ticker-12: Mastodon (light) (Instance Ticker Type-12)
     gplus-theme: G+ Theme for Mastodon
+    gplus-theme-instance-ticker-0: G+ Theme for Mastodon (Instance Ticker Type-0)
+    gplus-theme-instance-ticker-1: G+ Theme for Mastodon (Instance Ticker Type-1)
+    gplus-theme-instance-ticker-2: G+ Theme for Mastodon (Instance Ticker Type-2)
+    gplus-theme-instance-ticker-10: G+ Theme for Mastodon (Instance Ticker Type-10)
+    gplus-theme-instance-ticker-11: G+ Theme for Mastodon (Instance Ticker Type-11)
+    gplus-theme-instance-ticker-12: G+ Theme for Mastodon (Instance Ticker Type-12)
     gplus-theme-schwarz: G+ Theme Schwarz
-    instance-ticker-type-0: Mastodon (Instance Ticker Type-0)
-    instance-ticker-type-1: Mastodon (Instance Ticker Type-1)
+    gplus-theme-schwarz-instance-ticker-0: G+ Theme Schwarz (Instance Ticker Type-0)
+    gplus-theme-schwarz-instance-ticker-1: G+ Theme Schwarz (Instance Ticker Type-1)
+    gplus-theme-schwarz-instance-ticker-2: G+ Theme Schwarz (Instance Ticker Type-2)
+    gplus-theme-schwarz-instance-ticker-10: G+ Theme Schwarz (Instance Ticker Type-10)
+    gplus-theme-schwarz-instance-ticker-11: G+ Theme Schwarz (Instance Ticker Type-11)
+    gplus-theme-schwarz-instance-ticker-12: G+ Theme Schwarz (Instance Ticker Type-12)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

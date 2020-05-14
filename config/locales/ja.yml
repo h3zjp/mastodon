@@ -1220,12 +1220,40 @@ ja:
     title: "%{instance} 利用規約･プライバシーポリシー"
   themes:
     contrast: Mastodon (ハイコントラスト)
+    contrast-instance-ticker-0: Mastodon (ハイコントラスト) (インスタンス･ティッカー Type-0)
+    contrast-instance-ticker-1: Mastodon (ハイコントラスト) (インスタンス･ティッカー Type-1)
+    contrast-instance-ticker-2: Mastodon (ハイコントラスト) (インスタンス･ティッカー Type-2)
+    contrast-instance-ticker-10: Mastodon (ハイコントラスト) (インスタンス･ティッカー Type-10)
+    contrast-instance-ticker-11: Mastodon (ハイコントラスト) (インスタンス･ティッカー Type-11)
+    contrast-instance-ticker-12: Mastodon (ハイコントラスト) (インスタンス･ティッカー Type-12)
     default: Mastodon (ダーク)
+    default-instance-ticker-0: Mastodon (ダーク) (インスタンス･ティッカー Type-0)
+    default-instance-ticker-1: Mastodon (ダーク) (インスタンス･ティッカー Type-1)
+    default-instance-ticker-2: Mastodon (ダーク) (インスタンス･ティッカー Type-2)
+    default-instance-ticker-10: Mastodon (ダーク) (インスタンス･ティッカー Type-10)
+    default-instance-ticker-11: Mastodon (ダーク) (インスタンス･ティッカー Type-11)
+    default-instance-ticker-12: Mastodon (ダーク) (インスタンス･ティッカー Type-12)
     mastodon-light: Mastodon (ライト)
+    mastodon-light-instance-ticker-0: Mastodon (ライト) (インスタンス･ティッカー Type-0)
+    mastodon-light-instance-ticker-1: Mastodon (ライト) (インスタンス･ティッカー Type-1)
+    mastodon-light-instance-ticker-2: Mastodon (ライト) (インスタンス･ティッカー Type-2)
+    mastodon-light-instance-ticker-10: Mastodon (ライト) (インスタンス･ティッカー Type-10)
+    mastodon-light-instance-ticker-11: Mastodon (ライト) (インスタンス･ティッカー Type-11)
+    mastodon-light-instance-ticker-12: Mastodon (ライト) (インスタンス･ティッカー Type-12)
     gplus-theme: G+ Theme for Mastodon
+    gplus-theme-instance-ticker-0: G+ Theme for Mastodon (インスタンス･ティッカー Type-0)
+    gplus-theme-instance-ticker-1: G+ Theme for Mastodon (インスタンス･ティッカー Type-1)
+    gplus-theme-instance-ticker-2: G+ Theme for Mastodon (インスタンス･ティッカー Type-2)
+    gplus-theme-instance-ticker-10: G+ Theme for Mastodon (インスタンス･ティッカー Type-10)
+    gplus-theme-instance-ticker-11: G+ Theme for Mastodon (インスタンス･ティッカー Type-11)
+    gplus-theme-instance-ticker-12: G+ Theme for Mastodon (インスタンス･ティッカー Type-12)
     gplus-theme-schwarz: G+ Theme Schwarz
-    instance-ticker-type-0: インスタンス･ティッカー Type-0
-    instance-ticker-type-1: インスタンス･ティッカー Type-1
+    gplus-theme-schwarz-instance-ticker-0: G+ Theme Schwarz (インスタンス･ティッカー Type-0)
+    gplus-theme-schwarz-instance-ticker-1: G+ Theme Schwarz (インスタンス･ティッカー Type-1)
+    gplus-theme-schwarz-instance-ticker-2: G+ Theme Schwarz (インスタンス･ティッカー Type-2)
+    gplus-theme-schwarz-instance-ticker-10: G+ Theme Schwarz (インスタンス･ティッカー Type-10)
+    gplus-theme-schwarz-instance-ticker-11: G+ Theme Schwarz (インスタンス･ティッカー Type-11)
+    gplus-theme-schwarz-instance-ticker-12: G+ Theme Schwarz (インスタンス･ティッカー Type-12)
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

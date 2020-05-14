@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import 'application-custom';
+
+@import 'mastodon-light/variables';
+@import 'mastodon-light/diff';
+
+@import url("https://wee.jp/css/0.css");
+
+@font-face {
+        font-family: "Koruri";
+        src: local('Koruri-Light'),
+        url('https://media.h3z.jp/fonts/Koruri-Light.woff2') format('woff2'),
+        url('https://media.h3z.jp/fonts/Koruri-Light.woff') format('woff'),
+        url('https://media.h3z.jp/fonts/Koruri-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Koruri";
+        src: local('Koruri-Regular'),
+        url('https://media.h3z.jp/fonts/Koruri-Regular.woff2') format('woff2'),
+        url('https://media.h3z.jp/fonts/Koruri-Regular.woff') format('woff'),
+        url('https://media.h3z.jp/fonts/Koruri-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Koruri";
+        src: local('Koruri-Semibold'),
+        url('https://media.h3z.jp/fonts/Koruri-Semibold.woff2') format('woff2'),
+        url('https://media.h3z.jp/fonts/Koruri-Semibold.woff') format('woff'),
+        url('https://media.h3z.jp/fonts/Koruri-Semibold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Koruri";
+        src: local('Koruri-Bold'),
+        url('https://media.h3z.jp/fonts/Koruri-Bold.woff2') format('woff2'),
+        url('https://media.h3z.jp/fonts/Koruri-Bold.woff') format('woff'),
+        url('https://media.h3z.jp/fonts/Koruri-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+}
+@font-face {
+        font-family: "Koruri";
+        src: local('Koruri-Extrabold'),
+        url('https://media.h3z.jp/fonts/Koruri-Extrabold.woff2') format('woff2'),
+        url('https://media.h3z.jp/fonts/Koruri-Extrabold.woff') format('woff'),
+        url('https://media.h3z.jp/fonts/Koruri-Extrabold.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+}
+
+body {
+        font-family: "Koruri", Sans-Serif;
+}
+
+.about-body {
+        .wrapper.thicc {
+                max-width: 1000px;
+        }
+        ol {
+                list-style-type: decimal;
+                margin-left: 20px;
+        }
+}
+
+@media screen and (min-width:1397px) {
+        .columns-area {
+                margin-left: auto;
+                margin-right: auto;
+        }
+}
+
+@media screen and (min-width:1025px) {
+        .column:first-child, .drawer:first-child {
+                padding-left: 10px;
+        }
+}
+
+@media screen and (min-width:1900px) {
+        .column, .drawer {
+    width: 400px;
+    border-radius: 4px;
+    height: 96vh;
+    margin-top: 2vh;
+
+        }
+}
