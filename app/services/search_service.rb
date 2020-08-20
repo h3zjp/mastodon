@@ -36,6 +36,7 @@ class SearchService < BaseService
 
   def perform_statuses_search!
     definition = parsed_query.apply(StatusesIndex.filter(term: { searchable_by: @account.id }))
+                                                 .query(match: { 'text.stemmed': { query: @query, operator: 'and'}})
 
     if @options[:account_id].present?
       definition = definition.filter(term: { account_id: @options[:account_id] })
@@ -47,6 +48,8 @@ class SearchService < BaseService
       range[:lt] = @options[:max_id].to_i if @options[:max_id].present?
       definition = definition.filter(range: { id: range })
     end
+
+    definition = definition.order(id: { order: 'desc' })
 
     results             = definition.limit(@limit).offset(@offset).objects.compact
     account_ids         = results.map(&:account_id)
