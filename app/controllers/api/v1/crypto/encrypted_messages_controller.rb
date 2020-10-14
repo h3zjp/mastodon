@@ -26,7 +26,7 @@ class Api::V1::Crypto::EncryptedMessagesController < Api::BaseController
   end
 
   def set_encrypted_messages
-    @encrypted_messages = @current_device.encrypted_messages.paginate_by_id(limit_param(LIMIT), params_slice(:max_id, :since_id, :min_id))
+    @encrypted_messages = @current_device.encrypted_messages.to_a_paginated_by_id(limit_param(LIMIT), params_slice(:max_id, :since_id, :min_id))
   end
 
   def insert_pagination_headers
@@ -34,11 +34,11 @@ class Api::V1::Crypto::EncryptedMessagesController < Api::BaseController
   end
 
   def next_path
-    api_v1_encrypted_messages_url pagination_params(max_id: pagination_max_id) if records_continue?
+    api_v1_crypto_encrypted_messages_url pagination_params(max_id: pagination_max_id) if records_continue?
   end
 
   def prev_path
-    api_v1_encrypted_messages_url pagination_params(min_id: pagination_since_id) unless @encrypted_messages.empty?
+    api_v1_crypto_encrypted_messages_url pagination_params(min_id: pagination_since_id) unless @encrypted_messages.empty?
   end
 
   def pagination_max_id

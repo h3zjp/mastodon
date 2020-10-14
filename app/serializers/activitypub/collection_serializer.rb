@@ -1,14 +1,27 @@
 # frozen_string_literal: true
 
 class ActivityPub::CollectionSerializer < ActivityPub::Serializer
+  class StringSerializer < ActiveModel::Serializer
+    # Despite the name, it does not return a hash, but the same can be said of
+    # the ActiveModel::Serializer::CollectionSerializer class which handles
+    # arrays.
+    def serializable_hash(*_args)
+      object
+    end
+  end
+
   def self.serializer_for(model, options)
     case model.class.name
     when 'Status'
       ActivityPub::NoteSerializer
     when 'Device'
       ActivityPub::DeviceSerializer
+    when 'FeaturedTag'
+      ActivityPub::HashtagSerializer
     when 'ActivityPub::CollectionPresenter'
       ActivityPub::CollectionSerializer
+    when 'String'
+      StringSerializer
     else
       super
     end
